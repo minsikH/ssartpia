@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+main .membership {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 150rem;
+}
+
+.membership > li {
+  width: calc(50% - 6rem);
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 60rem;
+}
+
+.membership .cont_top {
+  text-align: center;
+  margin-bottom: 40rem;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 40rem;
+}
+
+.membership .cont_top > figure {
+  width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18rem;
+}
+
+.membership .cont_top > figure > img {
+  width: 100%;
+}
+
+.membership .cont_top > p:nth-child(2) {
+  font-size: 20rem;
+  color: #444;
+  line-height: 34rem;
+}
+
+.membership .cont_top > p:nth-child(3) {
+  font-size: 16rem;
+  color: #aeaeae;
+  margin-bottom: 8rem;
+}
+
+.membership .cont_top > span {
+  display: inline-block;
+  font-size: 16rem;
+  padding: 4rem 12rem;
+  background: #152f53;
+  color: #fff;
+  border-radius: 4rem;
+
+  font-family: Pretendard, "맑은 고딕", "돋움", Dotum, "굴림", Gulim, Sans-serif;
+}
+.membership .cont_top > span > span {
+  font-size: 13rem;
+}
+.membership .cont_text {
+}
+
+.membership .cont_text > li {
+  font-size: 16rem;
+  font-weight: 300;
+  position: relative;
+  color: #666;
+  padding-left: 10rem;
+  line-height: 29rem;
+  word-break: keep-all;
+}
+
+.membership .cont_text > li::before {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background-color: #444;
+  border-radius: 10rem;
+  top: 12rem;
+  left: 0;
+}
+
+.membership .cont_text > li > p {
+  position: relative;
+  padding-left: 27rem;
+  line-height: 29rem;
+  font-size: 14rem;
+  font-weight: 300;
+}
+
+.membership .cont_text > li > p::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 17rem;
+  height: 17rem;
+  background: url(../img/sub_public/icon_notice_gray.svg) no-repeat center/cover;
+  background-size: cover;
+  top: 6rem;
+  position: absolute;
+  left: 0;
+}
+
+.membership > li:last-child .cont_text > li:last-child {
+  text-align: center;
+  padding: 30rem 0;
+}
+
+.membership > li:last-child .cont_text > li:last-child::before {
+  content: none;
+}
+
+.membership > li:last-child .cont_text > li:last-child > a {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: 180rem;
+  height: 60rem;
+  border: 1px solid #25282d;
+  background: #1f2839;
+  line-height: 60rem;
+  box-sizing: border-box;
+  transition: box-shadow 0.7s cubic-bezier(0, 0, 0.21, 0.87) 0s;
+}
+.membership > li:last-child .cont_text > li:last-child > a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 120%;
+  height: 110%;
+  background: #fff;
+  transform: translateX(-120%) skew(-15deg) perspective(500px);
+  transition: transform 0.7s cubic-bezier(0, 0, 0.21, 0.87) 0s;
+}
+.membership > li:last-child .cont_text > li:last-child > a:hover::before {
+  transform: translateX(-10%) skew(-15deg) perspective(500px);
+}
+
+.membership > li:last-child .cont_text > li:last-child > a > span {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  font-size: 15rem;
+  color: #fff;
+}
+
+.membership > li:last-child .cont_text > li:last-child > a:hover {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+}
+.membership > li:last-child .cont_text > li:last-child > a:hover > span {
+  color: #222;
+}
+
+/* 반응형 */
+@media (max-width: 1919px) {
+}
+
+@media (max-width: 1480px) {
+}
+
+@media (max-width: 1023px) {
+  .membership > li {
+    padding: 40rem;
+  }
+  main > .inner {
+    margin: 0 40rem;
+  }
+
+  main .membership {
+    padding-bottom: 100rem;
+  }
+}
+
+@media (max-width: 860px) {
+  /* main title 공용 */
+  .ko_title {
+    font-family: "맑은 고딕", Pretendard;
+  }
+
+  /* //main title 공용 */
+
+  main .membership {
+    flex-direction: column;
+  }
+  .membership > li {
+    width: 100%;
+    padding: 32rem;
+  }
+  .membership > li + li {
+    margin-top: 24rem;
+  }
+  .membership .cont_top > p:nth-child(2),
+  .membership .cont_top > p:nth-child(3),
+  .membership .cont_text > li,
+  .membership .cont_text > li > p {
+    font-family: "맑은 고딕", Pretendard;
+  }
+}
+
+@media (max-width: 540px) {
+  /* main title 공용 */
+
+  main .title_text {
+    padding: 40rem 0 28rem;
+  }
+
+  main .title_text .en_title {
+    font-size: 11rem;
+    margin-bottom: 5rem;
+  }
+
+  main .title_text .ko_title {
+    font-size: 21rem;
+  }
+
+  .result {
+    padding-bottom: 55rem;
+  }
+
+  /* //main title 공용 */
+
+  main > .inner {
+    margin: 0 20rem;
+  }
+  .membership > li {
+    padding: 32rem 22rem;
+  }
+  .membership .cont_top > p:nth-child(3) {
+    font-size: 13rem;
+    font-weight: 300;
+  }
+  .membership .cont_top > span {
+    font-size: 13rem;
+    font-weight: 300;
+  }
+
+  .membership .cont_text > li {
+    font-size: 13rem;
+    line-height: 22rem;
+    padding-left: 7rem;
+  }
+
+  .membership .cont_text > li > p {
+    font-size: 12rem;
+    line-height: 22rem;
+    padding-left: 18rem;
+    margin-top: 4rem;
+  }
+  .membership .cont_top {
+    margin-bottom: 40px;
+  }
+  .membership .cont_text > li > p::before {
+    width: 14rem;
+    height: 14rem;
+    top: 4rem;
+  }
+  .membership > li:last-child .cont_text > li:last-child > a {
+    height: 50rem;
+    line-height: 50rem;
+  }
+  main .membership {
+    padding-bottom: 55rem;
+  }
+}

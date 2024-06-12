@@ -1,0 +1,2020 @@
+@charset "utf-8";
+
+/* cont_search_area 공통 */
+
+.cont_search_area {
+  width: 1240rem;
+  margin: 0 auto 40rem;
+  padding: 40rem 0;
+  background: #f6f6f6;
+}
+
+.cont_search_area .cont_inner {
+  padding: 0 20rem;
+}
+
+.cont_search_area .sub_tab_search > ul {
+  display: flex;
+  justify-content: center;
+  margin-right: -20rem;
+  margin-left: -20rem;
+  box-sizing: border-box;
+}
+
+.cont_search_area .sub_tab_search > ul > .select_box {
+  position: relative;
+  font-size: 15rem;
+  color: #141414;
+  width: 130rem;
+  height: 52rem;
+  background: #fff;
+  margin-right: 13rem;
+  border: 1rem solid transparent;
+  box-sizing: border-box;
+  transition: all 0.4s ease 0.2s;
+}
+
+.cont_search_area .sub_tab_search > ul > .select_box.on {
+  border: 1rem solid #000;
+  transition-delay: 0s;
+}
+
+.sub_tab_search > ul > .select_box > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 18rem;
+  box-sizing: border-box;
+}
+
+.sub_tab_search > ul > .select_box > a > img {
+  width: 10rem;
+  height: 16rem;
+}
+
+.sub_tab_search .select_box .select_box_option {
+  position: absolute;
+  overflow: hidden;
+  top: 99%;
+  left: -1rem;
+  z-index: 2;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 10rem;
+  background-color: #fff;
+  border: 1rem solid #000;
+  border-top: 0;
+  font-size: 15rem;
+  color: #666;
+  text-align: left;
+  list-style: none;
+}
+
+.sub_tab_search .select_box .select_box_option > li {
+  padding: 5rem 18rem;
+  border-bottom: 0;
+  font-weight: 300;
+  font-size: 14rem;
+  color: #777;
+  transition: all 0.3s ease-out 0s;
+}
+
+.sub_tab_searchA > li:nth-child(2) {
+  width: 33%;
+  margin-right: 7rem;
+}
+
+.sub_tab_searchA > li > .search_bar_input {
+  width: 100%;
+  height: 52rem;
+  padding: 9rem 12rem;
+  background: #fff;
+  border: 1rem solid transparent;
+  transition: all 0.3s ease 0s;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.sub_tab_searchA > li:last-child {
+  width: 100rem;
+  height: 52rem;
+  box-sizing: border-box;
+}
+
+.sub_tab_searchA > li > .search_selectA {
+  width: 100%;
+  height: 100%;
+  background: #1a2332;
+  border: none;
+  font-size: 16rem;
+  color: #fff;
+  padding: 0 15rem;
+  position: relative;
+}
+.sub_tab_searchA > li > .search_selectA > img {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15rem;
+  height: 15rem;
+}
+
+/* sub_tab */
+.sub_tab {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48rem;
+}
+
+.sub_tab > li {
+  width: 167rem;
+  height: 58rem;
+}
+
+.sub_tab > li + li {
+  margin-left: 6rem;
+}
+
+.sub_tab > li > a {
+  width: 100%;
+  height: 100%;
+  font-size: 16rem;
+  line-height: 56rem;
+  display: flex;
+  justify-content: center;
+  border: 1rem solid #ddd;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.sub_tab > li:hover > a {
+  font-weight: 500;
+  color: #fff;
+  background: #1f2839;
+  border: 1rem solid #1f2839;
+  box-shadow: 6rem 10rem 29rem 0rem rgba(27, 34, 45, 0.38);
+}
+
+.sub_tab > li.on > a {
+  font-weight: 500;
+  color: #fff;
+  background: #1f2839;
+  border: 1rem solid #1f2839;
+  box-shadow: 6rem 10rem 29rem 0rem rgba(27, 34, 45, 0.38);
+}
+
+/* sub_tab_result */
+.sub_tab_result {
+  padding-bottom: 150rem;
+}
+
+.sub_tab_result > div {
+  display: none;
+}
+
+.sub_tab_result > div.on {
+  display: block;
+}
+
+/* sub_tab_result > result_list */
+
+.sub_tab_result .result_list_area {
+  width: 100%;
+  margin-bottom: 60rem;
+}
+
+.sub_tab_result .result_list_area > thead th {
+  font-size: 16px;
+  font-weight: 400;
+  color: #222;
+  text-align: center;
+  padding: 20rem 10rem;
+  border-top: 2rem solid #4c4c4c;
+  border-bottom: 1rem solid #d2d7dc;
+}
+
+.sub_tab_result .result_list_area > thead tr,
+.sub_tab_result .result_list_area > tbody tr {
+  width: 100%;
+}
+
+.sub_tab_result .result_list_area > tbody tr.contentAcodian {
+  border-bottom: 1rem solid #eaecf1;
+}
+
+.sub_tab_result .result_list_area > tbody td {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  text-align: center;
+  padding: 25rem 10rem;
+  letter-spacing: -0.02rem;
+}
+
+.sub_tab_result .result_list_area > tbody .contentAcodian td {
+  border-bottom: none;
+}
+
+.sub_tab_result .result_list_area > tbody td:nth-child(2) {
+  text-align: left;
+  color: #222;
+}
+
+.sub_tab_result .result_list_area > tbody > tr td.content {
+  padding: 0;
+  color: #222;
+}
+
+.sub_tab_result .result_list_area > tbody .contentText {
+  padding: 25rem calc(7% + 10rem);
+}
+
+.sub_tab_result .result_list_area > tbody > .contentTitle {
+  cursor: pointer;
+}
+
+.sub_tab_result .result_list_area > tbody > .contentTitle .notice {
+  display: block;
+  max-width: 50rem;
+  font-size: 13px;
+  color: #fff;
+  margin: 0 auto;
+  padding: 5px 0;
+  border-radius: 30px;
+  background: #343434;
+}
+
+.result_list_area .content .contNoticeNum {
+  margin-bottom: 20rem;
+  text-align: left;
+}
+
+.result_list_area .contentText > div {
+  width: 70%;
+  margin: 0 auto;
+  word-break: keep-all;
+}
+
+.result_list_area .content .contTitle {
+  font-weight: 700;
+  margin-bottom: 20rem;
+}
+
+.result_list_area .content .contText {
+  margin-bottom: 20rem;
+}
+
+.result_list_area .content .contDate {
+  margin-bottom: 20rem;
+}
+
+.result_list_area .content .contBoss {
+  font-weight: 700;
+}
+
+/* sub_tab_result > procedure */
+.procedure .process_list {
+  display: flex;
+  margin-top: 98rem;
+  margin-bottom: 118rem;
+}
+
+.procedure .process_list > li {
+  position: relative;
+  width: 12.5%;
+  text-align: center;
+  margin-right: 35rem;
+}
+
+.procedure .process_list > li:last-child {
+  margin-right: 0;
+}
+
+.procedure .process_list > li::after {
+  content: "";
+  width: 22rem;
+  height: 16rem;
+  background: url(../img/sub_rental/icon_proces_next.svg) no-repeat center/cover;
+  position: absolute;
+  top: 50%;
+  right: -25rem;
+  transform: translateY(-50%);
+  opacity: 0.1;
+}
+
+.procedure .process_list > li:last-child::after {
+  content: none;
+}
+
+.procedure .process_list li img {
+  height: 37rem;
+  margin-bottom: 10rem;
+  opacity: 0.12;
+  transition: all 0.3s;
+}
+
+.procedure .process_list li:hover img {
+  opacity: 1;
+}
+
+.procedure .process_list li:nth-child(1) img {
+  width: 49rem;
+}
+
+.procedure .process_list li:nth-child(2) img {
+  width: 32rem;
+}
+
+.procedure .process_list li:nth-child(3) img {
+  width: 42rem;
+}
+
+.procedure .process_list li:nth-child(4) img {
+  width: 44rem;
+}
+
+.procedure .process_list li:nth-child(5) img {
+  width: 33rem;
+}
+
+.procedure .process_list li:nth-child(6) img {
+  width: 39rem;
+}
+
+.procedure .process_list li:nth-child(7) img {
+  width: 40rem;
+}
+
+.procedure .process_list li figure > figcaption {
+  font-size: 16rem;
+  font-weight: 300;
+  color: #666;
+  transition: all 0.3s;
+}
+
+.procedure .process_list > li:hover figure > figcaption {
+  font-weight: 500;
+  color: #222;
+}
+
+.procedure > ol {
+}
+
+.procedure > ol > li {
+  position: relative;
+  padding-bottom: 87rem;
+}
+.procedure > ol > li:last-child {
+  padding-bottom: 0;
+}
+
+.procedure > ol > li::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  left: 30rem;
+  top: 0;
+  opacity: 0.05;
+}
+
+.procedure > ol > li:last-child::before {
+  content: none;
+}
+
+.procedure > ol > li > .num {
+  width: 60rem;
+  height: 60rem;
+  border-radius: 100%;
+  background: #fff;
+  position: absolute;
+  top: -14rem;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6rem 10rem 29rem 0rem rgba(27, 34, 45, 0.08);
+}
+
+.procedure > ol > li > .num > span {
+  font-size: 20rem;
+  line-height: 1;
+  color: #caae87;
+}
+
+.procedure > ol > li > .rental_cont {
+  padding-left: 160rem;
+}
+
+.rental_cont .rental_cont_top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12rem;
+}
+
+.rental_cont_top > span:first-child {
+  font-size: 28rem;
+  color: #222;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  padding-right: 20rem;
+}
+
+.rental_cont_top > span:first-child > strong {
+  font-weight: 600;
+}
+
+.rental_cont_top > .line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-top: 1px dashed #222;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.73;
+}
+
+.rental_cont_top > figure {
+  width: 75rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.procedure > ol > li:nth-child(1) img {
+  width: 49rem;
+  margin-right: -3rem;
+}
+
+.procedure > ol > li:nth-child(2) img {
+  width: 32rem;
+}
+
+.procedure > ol > li:nth-child(3) img {
+  width: 42rem;
+}
+
+.procedure > ol > li:nth-child(4) img {
+  width: 44rem;
+}
+
+.procedure > ol > li:nth-child(5) img {
+  width: 33rem;
+}
+
+.procedure > ol > li:nth-child(6) img {
+  width: 39rem;
+}
+
+.procedure > ol > li:nth-child(7) img {
+  width: 40rem;
+}
+.procedure > ol > li:nth-child(8) img {
+  width: 36rem;
+}
+
+.rental_cont .rental_cont_bot > li {
+  position: relative;
+  font-size: 16rem;
+  line-height: 29rem;
+  color: #666;
+  padding-left: 10rem;
+  word-break: break-all;
+}
+
+.rental_cont .rental_cont_bot > li::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background: #444;
+  border-radius: 10rem;
+  position: absolute;
+  top: 12rem;
+  left: 0;
+}
+
+.rental_cont .rental_cont_bot > li + li {
+  margin-top: 6rem;
+}
+
+.rental_cont .rental_cont_bot > li > span {
+  color: #444;
+  font-weight: 500;
+  margin-right: 8rem;
+}
+
+.rental_cont .rental_cont_note {
+  position: relative;
+  padding: 40rem 32rem 26rem;
+  background: #fafafa;
+  margin-top: 64rem;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+}
+
+.rental_cont .rental_cont_note > span {
+  display: inline-block;
+  font-size: 16rem;
+  font-weight: 300;
+  color: #fff;
+  background: #0e0e0e;
+  border-radius: 4rem;
+  position: absolute;
+  top: -18rem;
+  left: 35rem;
+  padding: 7rem 20rem 4rem;
+  box-sizing: border-box;
+}
+
+.rental_cont_note > ul > li {
+  position: relative;
+  font-size: 16rem;
+  color: #666;
+  line-height: 29rem;
+  padding-left: 10rem;
+  word-break: break-all;
+}
+.rental_cont_note > ul > li:last-child {
+  color: #caae87;
+}
+.rental_cont_note > ul > li::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background: #444;
+  border-radius: 10rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.rental_cont_note > ul > li + li {
+  margin-top: 6rem;
+}
+
+/* 공연,전시 부분 색 다른부분 */
+.procedure > ol > li:nth-child(5) .rental_cont_bot > li:last-child {
+  color: rgb(215, 39, 39);
+}
+
+/* sub_tab_result > rental_fee */
+.sub_tab_result .rental_fee > div {
+  position: relative;
+}
+
+.sub_tab_result .rental_fee > div + div {
+  margin-top: 130rem;
+}
+
+.rental_fee {
+  margin-top: 100rem;
+}
+
+.rental_fee .title_area {
+  width: 222rem;
+  border-top: 1px solid #222;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.rental_fee .title_area > p {
+  font-size: 28rem;
+  font-weight: 300;
+  color: #222;
+  margin-top: 25rem;
+}
+
+.rental_fee .title_area > p > strong {
+  font-weight: 600;
+}
+
+.rental_fee .text_area {
+  padding-left: 350rem;
+}
+
+.text_area > li {
+  margin-bottom: 50rem;
+}
+
+.text_area > li:last-child {
+  margin-bottom: 0;
+}
+
+.text_area > li > .unit {
+  font-size: 13rem;
+  text-align: right;
+  margin-bottom: 8rem;
+}
+.text_area > li > .unit > span {
+  font-weight: 700;
+}
+.text_area > li > table {
+  width: 100%;
+  table-layout: fixed;
+  margin-bottom: 14rem;
+}
+
+.text_area > li > table > thead {
+  background: #f9f9f9;
+}
+
+.text_area > li > table tr {
+  text-align: center;
+}
+
+.text_area > li > table th,
+.text_area > li > table td {
+  border: 1px solid #e6e6e6;
+  font-weight: 500;
+  font-family: Pretendard;
+}
+
+.text_area > li > table tr > th:first-child,
+.text_area > li > table tr > td:first-child {
+  border-left: none;
+}
+
+.text_area > li > table tr > th:last-child,
+.text_area > li > table tr > td:last-child {
+  border-right: none;
+}
+
+.text_area > li > table th {
+  font-size: 16rem;
+  color: #444;
+  padding: 13rem 0;
+  box-sizing: border-box;
+}
+
+.text_area > li > table td {
+  font-size: 16rem;
+  color: #666;
+  padding: 13rem 30rem;
+  box-sizing: border-box;
+}
+
+.text_area > li > table td > p {
+  position: relative;
+  padding-left: 10rem;
+  line-height: 29rem;
+  word-break: keep-all;
+}
+
+.text_area > li > table td > p::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background: #444;
+  border-radius: 10rem;
+  position: absolute;
+  top: 12rem;
+  left: 0;
+}
+
+.text_area > li > .text_area_note {
+  padding: 20rem 26rem;
+
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+}
+
+.text_area > li > .text_area_note > li {
+  position: relative;
+
+  font-size: 14rem;
+  line-height: 29rem;
+  color: #caae87;
+  padding-left: 27rem;
+}
+
+.text_area > li > .text_area_note > li::before {
+  content: "";
+
+  width: 17rem;
+  height: 17rem;
+  background: url(/img/sub_rental/icon_notice.svg) no-repeat center/cover;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+
+.text_area > li > .text_area_title {
+  font-size: 19rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 11rem;
+}
+
+.text_area > li > .text_area_text > li {
+  position: relative;
+  font-size: 16rem;
+  padding-left: 10rem;
+  line-height: 29rem;
+  color: #666;
+  word-break: break-all;
+}
+
+.text_area > li > .text_area_text > li::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background: #444;
+  border-radius: 10rem;
+  position: absolute;
+  top: 12rem;
+  left: 0;
+}
+
+.text_area > li > .text_area_text > li.before_off {
+  padding-left: 0;
+}
+
+.text_area > li > .text_area_text > li.before_off::before {
+  content: none;
+}
+
+.text_area > li > .text_area_text > li + li {
+  margin-top: 6rem;
+}
+
+.text_area > li > .text_area_text > li > span {
+  font-size: 16rem;
+  font-weight: 500;
+  color: #444;
+  margin-right: 8rem;
+}
+
+.text_area_text .text_area_note {
+  padding: 20rem 26rem;
+  background: #fafafa;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  margin-top: 14rem;
+}
+
+.text_area_text .text_area_note > li {
+  position: relative;
+  font-size: 14rem;
+  color: #caae87;
+  padding-left: 27rem;
+  line-height: 29rem;
+}
+
+.text_area_text .text_area_note > li::before {
+  content: "";
+
+  width: 17rem;
+  height: 17rem;
+  background: url(/img/sub_rental/icon_notice.svg) no-repeat center/cover;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+
+/* sub_tab_result > data */
+.sub_tab_result .data {
+  position: relative;
+  margin-top: 100rem;
+}
+
+.data .title_area {
+  width: 222rem;
+  border-top: 1px solid #222;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.data .title_area > p {
+  font-size: 28rem;
+  font-weight: 300;
+  color: #222;
+  margin-top: 25rem;
+}
+
+.data .text_area {
+  padding-left: 350rem;
+}
+
+.data .text_area > li > dl > dt {
+  font-size: 19rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 11rem;
+}
+
+.data .text_area > li > dl > dd {
+  position: relative;
+  font-size: 14rem;
+  line-height: 21rem;
+  color: #666;
+  padding-left: 10rem;
+  word-break: break-all;
+}
+
+.data .text_area > li > dl > dd > a {
+  width: 180rem;
+  padding: 12rem 14rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1rem solid #444;
+  box-sizing: border-box;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.data .text_area > li > dl > dd > a:hover {
+  opacity: 1;
+}
+
+.data .text_area > li > dl > dd img {
+  width: 14rem;
+}
+
+/* sub_tab_result > education */
+.sub_tab_result .education {
+  margin-top: 100rem;
+}
+
+.sub_tab_result .education > div {
+  position: relative;
+}
+
+.sub_tab_result .education > div + div {
+  margin-top: 130rem;
+}
+
+.education .title_area {
+  width: 222rem;
+  border-top: 1px solid #222;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.education .title_area > p {
+  font-size: 28rem;
+  font-weight: 300;
+  color: #222;
+  margin-top: 25rem;
+}
+
+.education .title_area > p > strong {
+  font-weight: 600;
+}
+
+.education .text_area {
+  padding-left: 350rem;
+}
+
+.education .text_area > li > table {
+  margin-bottom: 14rem;
+}
+
+.education .text_area > li > table > thead {
+  background: none;
+}
+
+.education .text_area > li > table tr {
+  border-top: 1px solid #e6e6e6;
+}
+.education .text_area > li > table tr:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
+.education .text_area > li > table th {
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.education .text_area > li > table th {
+  width: 30%;
+  font-size: 16rem;
+  color: #444;
+  padding: 13px 30px;
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+
+.education .text_area > li > table td {
+  font-size: 16rem;
+  color: #666;
+  padding: 13rem 30rem;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.education .education_cont > .title {
+  position: relative;
+  font-size: 16rem;
+  line-height: 29rem;
+  padding-left: 10rem;
+  word-break: keep-all;
+}
+
+.education .education_cont > .title::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background: #444;
+  border-radius: 10rem;
+  position: absolute;
+  top: 12rem;
+  left: 0;
+}
+
+.education .text_area > li > table td > p::before {
+  content: none;
+}
+
+.education .education_cont > .note {
+  position: relative;
+
+  font-size: 14rem;
+  line-height: 29rem;
+  color: #caae87;
+  padding-left: 27rem;
+}
+
+.education .education_cont > .note::before {
+  content: "";
+
+  width: 17rem;
+  height: 17rem;
+  background: url(/img/sub_rental/icon_notice.svg) no-repeat center/cover;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+}
+
+.education .education_cont > ul {
+  padding: 13rem 0 13rem 30rem;
+}
+
+.education .education_cont > ul > li {
+  position: relative;
+  font-size: 15rem;
+  line-height: 29rem;
+  padding-left: 10rem;
+
+  opacity: 0.7;
+  word-break: keep-all;
+}
+
+.education .education_cont > ul > li::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background: #444;
+  border-radius: 10rem;
+  position: absolute;
+  top: 12rem;
+  left: 0;
+}
+
+.education .education_cont > ul > li + li {
+  margin-top: 6rem;
+}
+
+.education .education_cont > ul > li > span {
+  color: #444;
+}
+
+.education .text_area > li > .text_area_text > li {
+  display: flex;
+  align-items: center;
+}
+
+.education .text_area > li > .text_area_text > li > a {
+  display: flex;
+  align-items: center;
+  font-size: 16rem;
+  font-weight: 500;
+  color: #444;
+  margin-left: 8rem;
+  opacity: 0.45;
+}
+
+.education .text_area > li > .text_area_text > li > a > img {
+  width: 13rem;
+  height: 13rem;
+  background: url(./img/sub_rental/icon_link.svg) no-repeat center/cover;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+}
+
+.education .text_area_text + .text_area_note {
+  margin-top: 14rem;
+}
+
+/* sub_tab_result > data */
+.sub_tab_result .data {
+  position: relative;
+  margin-top: 100rem;
+}
+
+.data .title_area {
+  width: 222rem;
+  border-top: 1px solid #222;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.data .title_area > p {
+  font-size: 28rem;
+  font-weight: 300;
+  color: #222;
+  margin-top: 25rem;
+}
+
+.data .text_area {
+  padding-left: 350rem;
+}
+
+.data .text_area > li {
+  margin-bottom: 0;
+}
+.data .text_area > li > dl > dt {
+  font-size: 19rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 11rem;
+}
+
+.data .text_area > li > dl > dd {
+  position: relative;
+  display: flex;
+  font-size: 14rem;
+  line-height: 21rem;
+  color: #666;
+  padding-left: 10rem;
+  word-break: break-all;
+}
+
+.data .text_area > li > dl > dd > a {
+  width: 180rem;
+  padding: 12rem 14rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1rem solid #444;
+  box-sizing: border-box;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+.data .text_area > li > dl > dd > a + a {
+  margin-left: 5rem;
+}
+.data .text_area > li > dl > dd > a:hover {
+  opacity: 1;
+}
+
+.data .text_area > li > dl > dd img {
+  width: 14rem;
+}
+
+.data .result_list .cont_search_area {
+  width: 100%;
+}
+.data .result_list .cont_search_area .cont_inner {
+  width: 100%;
+}
+
+.sub_tab_result .result_list_area > tbody > tr td.content.noContent {
+  color: #666;
+  padding: 25rem 10rem;
+}
+
+/* Pagination Style */
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination > li.paginationNum {
+  margin: 0 2px;
+}
+
+.pagination > li.active > a {
+  font-weight: 600;
+  color: #222;
+}
+
+.pagination > li > a {
+  display: block;
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
+  font-size: 16px;
+  font-family: "Ibarra Real Nova", Pretendard;
+  color: #939393;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+
+.pagination > li > a:hover {
+  color: #caae87;
+}
+
+.pagination #first,
+.pagination #prev,
+.pagination #next,
+.pagination #last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.pagination .paginationBox_first + li {
+  margin-left: 12px;
+}
+
+.pagination .paginationBox_prev + li {
+  margin-left: 9px;
+}
+
+.pagination .paginationBox_first + .paginationBox_prev {
+  margin-left: 0;
+}
+
+.pagination li + .paginationBox_next {
+  margin-left: 9px;
+}
+
+.pagination li + .paginationBox_last {
+  margin-left: 9px;
+}
+
+.pagination li + .paginationBox_next + .paginationBox_last {
+  margin-left: 0;
+}
+
+.pagination #first > span,
+.pagination #prev > span,
+.pagination #next > span,
+.pagination #last > span {
+  display: block;
+  background: no-repeat center/cover;
+  opacity: 0.4;
+}
+
+.pagination #first > span,
+.pagination #last > span {
+  width: 9px;
+  height: 9px;
+  background-image: url(../img/sub_public/icon_btn_pager_end.svg);
+}
+
+.pagination #prev > span,
+.pagination #next > span {
+  width: 6px;
+  height: 9px;
+  background-image: url(../img/sub_public/icon_btn_pager.svg);
+}
+
+.pagination #first > span,
+.pagination #prev > span {
+  transform: rotate(180deg);
+}
+
+/* 
+  
+  하던것
+
+1. 480이하에서는 또 검색버튼없어지고 돋보기로바뀜
+
+2. 아무것도없는 검색시 등록된글이없습니다. 나와야함
+
+
+
+
+
+다른것에 넣을때
+
+1. 테이플 안에 글씨는 px로 변경
+
+2.  <div class="sub_tab_box"></div> 를 sub_tab위에 감싸게 추가해야함
+  
+  
+  */
+
+/* 반응형 */
+@media (max-width: 1919px) {
+}
+
+@media (max-width: 1480px) {
+  /* main title 공용 */
+  .result {
+    padding-bottom: 100rem;
+  }
+
+  /* //main title 공용 */
+}
+
+@media (max-width: 1023px) {
+  main .inner {
+    margin: 0 40rem;
+  }
+  .cont_search_area {
+    width: 100%;
+    padding: 48rem 0;
+  }
+  .cont_search_area .sub_tab_search > ul {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .sub_tab_searchB .date_select {
+    justify-content: flex-start;
+  }
+
+  .sub_tab_result {
+    padding-bottom: 100rem;
+  }
+
+  /* sub_tab>li(2) */
+
+  .procedure .process_list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .procedure .process_list > li {
+    width: 25%;
+    margin-right: 0;
+  }
+  .procedure .process_list > li:nth-child(n + 5) {
+    margin-top: 20rem;
+  }
+  .procedure .process_list > li::after {
+    width: 16rem;
+    height: 11rem;
+    right: 12rem;
+  }
+  .procedure > ol > li > .rental_cont {
+    padding-left: 100rem;
+  }
+
+  /* sub_tab>li(3) */
+
+  .rental_fee .title_area {
+    width: 100%;
+    position: relative;
+    border-top: none;
+    border-bottom: 1px solid #0e0e0e;
+    margin-bottom: 34rem;
+  }
+  .rental_fee .title_area > p {
+    margin-top: 0;
+    margin-bottom: 8rem;
+  }
+
+  .rental_fee .text_area {
+    padding-left: 0;
+  }
+
+  /* sub_tab>li(4) */
+
+  .data .title_area {
+    width: 100%;
+    position: relative;
+    border-top: none;
+    border-bottom: 1px solid #0e0e0e;
+    margin-bottom: 34rem;
+  }
+  .data .title_area > p {
+    margin-top: 0;
+    margin-bottom: 8rem;
+  }
+
+  .data .text_area {
+    padding-left: 0;
+  }
+  .data .text_area > li > dl > dd {
+    padding-left: 0;
+  }
+
+  /* sub_tab>li(5) */
+
+  .education .title_area {
+    width: 100%;
+    position: relative;
+    border-top: none;
+    border-bottom: 1px solid #0e0e0e;
+    margin-bottom: 34rem;
+  }
+  .education .title_area > p {
+    margin-top: 0;
+    margin-bottom: 8rem;
+  }
+
+  .education .text_area {
+    padding-left: 0;
+  }
+  .education .text_area > li > dl > dd {
+    padding-left: 0;
+  }
+  .education > div:first-child .text_area > li {
+    margin-bottom: 14rem;
+  }
+}
+
+@media (max-width: 860px) {
+  /* main title 공용 */
+  .ko_title {
+    font-family: "맑은 고딕", Pretendard;
+  }
+
+  /* //main title 공용 */
+
+  /* 서브탭 공용 */
+  .sub_tab > li > a {
+    font-family: "맑은 고딕", Pretendard;
+  }
+  /* //서브탭 공용 */
+
+  .cont_search_area .search_title,
+  .cont_search_area .sub_tab_search > ul > li > p,
+  .type_select > li > label > span {
+    font-family: "맑은 고딕", Pretendard;
+  }
+
+  .result_list_area col[data-table="num"] {
+    width: 70px !important;
+  }
+
+  .sub_tab_result .result_list_area > tbody .contentText {
+    padding: 25rem calc(70px + 10rem);
+  }
+
+  /* sub_tab>li(2) */
+  .procedure .process_list > li figure > figcaption,
+  .rental_cont_top > span:first-child,
+  .rental_cont_top > span:first-child > strong,
+  .rental_cont .rental_cont_bot > li,
+  .rental_cont .rental_cont_bot > li > span,
+  .rental_cont .rental_cont_note > span,
+  .rental_cont_note > ul > li {
+    font-family: "맑은 고딕", Pretendard;
+  }
+
+  /* sub_tab>li(3) */
+  .rental_fee .title_area > p,
+  .text_area > li > .text_area_title,
+  .text_area > li > .text_area_text > li {
+    font-family: "맑은 고딕", Pretendard;
+  }
+  .text_area_text .text_area_note > li {
+    font-family: "Ibarra Real Nova", Pretendard, "맑은 고딕", "돋움", Dotum,
+      "굴림", Gulim, Sans-serif;
+  }
+
+  .text_area > li > table {
+    word-break: keep-all;
+  }
+  /* sub_tab>li(4) */
+  .data .title_area > p,
+  .data .text_area > li > dl > dt,
+  .data .text_area > li > dl > dd,
+  .sub_tab_result .result_list_area > thead th,
+  .sub_tab_result .result_list_area > tbody .contentAcodian td {
+    font-family: "맑은 고딕", Pretendard;
+  }
+
+  .data .text_area > li > dl > dd > a {
+    width: auto;
+    min-width: 187rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .sub_tab_searchA > li:nth-child(2) {
+    width: 45%;
+  }
+
+  .result_list_area thead {
+    display: none;
+  }
+  .result_list_area tbody {
+    position: relative;
+  }
+  /* .result_list_area tbody>.contentTitle>td:nth-child(1) {
+    visibility: hidden;
+} */
+  .result_list_area col[data-table="num"] {
+    width: 0 !important;
+  }
+  .result_list_area col[data-table="writer"] {
+    width: 0 !important;
+  }
+  .result_list_area col[data-table="date"] {
+    width: 0 !important;
+  }
+  /* .result_list_area tbody>tr {
+    display: block !important;
+} */
+  .result_list_area tbody > .contentTitle:nth-child(4n + 3) {
+    background: #f9fafb;
+  }
+  .result_list_area tbody > tr:nth-child(4n + 4) {
+    background: #f9fafb;
+  }
+  .result_list_area tbody > .contentTitle {
+    border: 1rem solid #eaecf1;
+    border-bottom: none;
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+  .result_list_area tbody > .contentTitle > td:nth-child(1) {
+    position: absolute;
+    left: -1000%;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+  }
+  .result_list_area tbody > .contentTitle > td:nth-child(2) {
+    display: block;
+    border-bottom: 1px dashed #e4e4e4;
+  }
+  .result_list_area tbody > .contentTitle > td:nth-child(3) {
+    display: inline-block;
+    font-size: 14px;
+  }
+  .result_list_area tbody > .contentTitle > td:nth-child(4) {
+    display: inline-block;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .sub_tab_result .result_list_area > tbody td {
+    padding: 20rem;
+    word-break: keep-all;
+  }
+
+  .result_list_area tbody > .contentAcodian .contentText {
+    box-sizing: content-box;
+    border-top: 1px dashed #e4e4e4;
+    border-left: 1px solid #eaecf1;
+    border-right: 1px solid #eaecf1;
+    padding: 20rem;
+  }
+  .result_list_area .contentText > div {
+    width: 90%;
+  }
+
+  /* sub_tab>li(4) */
+  .sub_tab_result .result_list_area > tbody > tr td.content.noContent {
+    border: 1px solid #eaecf1;
+  }
+}
+
+@media (max-width: 540px) {
+  /* main title 공용 */
+
+  main .title_text {
+    padding: 40rem 0 28rem;
+  }
+
+  main .title_text .en_title {
+    font-size: 11rem;
+    margin-bottom: 5rem;
+  }
+
+  main .title_text .ko_title {
+    font-size: 21rem;
+  }
+
+  .result {
+    padding-bottom: 55rem;
+  }
+
+  /* //main title 공용 */
+
+  /* 서브탭 공용 */
+
+  .sub_tab_box {
+    margin: 0 20rem 23rem 20rem;
+  }
+
+  .sub_tab {
+    margin-bottom: 0rem;
+    justify-content: flex-start;
+  }
+  .sub_tab > li {
+    width: auto;
+    height: auto;
+  }
+  .sub_tab > li:first-child {
+    margin-left: 7rem;
+  }
+  .sub_tab > li:last-child {
+    padding-right: 10rem;
+  }
+  .sub_tab > li > a {
+    height: 35rem;
+    line-height: 35rem;
+    font-size: 14rem;
+    font-weight: 300;
+    padding: 0 8rem;
+    border: none;
+    border-radius: 80rem;
+    transition: none;
+    word-break: keep-all;
+    white-space: nowrap;
+  }
+  .sub_tab > li:hover > a {
+    font-weight: 300;
+    color: #444;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+  .sub_tab > li.on > a {
+    padding: 0 18rem;
+    box-shadow: none;
+  }
+  .sub_tab > li.on:hover > a {
+    font-weight: 500;
+    color: #fff;
+    background: #1f2839;
+    border: 1px solid #1f2839;
+  }
+  /* //서브탭 공용 */
+
+  main .inner {
+    margin: 0;
+  }
+
+  .cont_search_area {
+    padding: 28rem 0;
+  }
+
+  .cont_search_area .search_title {
+    display: none;
+  }
+
+  .cont_search_area .sub_tab_search > ul > li > p {
+    font-size: 14rem;
+    margin-bottom: 7rem;
+  }
+  .date_select > li {
+    height: 40rem;
+  }
+  .date_select > li > .date_details {
+    width: calc(100% - 34rem);
+    height: 40rem;
+  }
+  .date_select > li > button {
+    width: 34rem;
+  }
+
+  .date_select > li > button > span {
+    width: 15rem;
+    height: 14rem;
+    background-size: auto;
+  }
+
+  .date_select > li:nth-child(2) {
+    font-size: 22rem;
+    line-height: 39rem;
+    width: 60rem;
+  }
+
+  .type_select > li > label > span::before {
+    display: none;
+  }
+  .cont_search_area .type_select {
+    gap: 4rem;
+  }
+  .type_select > li {
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .type_select > li > label > input {
+    padding: 0;
+  }
+  .type_select > li > label > span {
+    font-size: 13rem;
+    font-weight: 400;
+    color: #bfbfbf;
+    line-height: normal;
+    padding: 8rem 12rem;
+  }
+  .type_select > li > label > input:checked + span {
+    color: #caae87;
+  }
+  .type_select > li + li > label > input {
+    border-left: 1px solid #ddd;
+  }
+
+  .sub_tab_result {
+    padding-bottom: 55rem;
+  }
+
+  .sub_tab_result .result_list_area > tbody td {
+    padding: 10rem;
+  }
+  .cont_search_area .location_select {
+    height: 42rem;
+    line-height: 42rem;
+    padding: 0 15rem;
+  }
+  .sub_tab_result .result_list_area {
+    margin-bottom: 30rem;
+  }
+
+  .search_select > button {
+    width: 50rem;
+    height: 36rem;
+    font-size: 15rem;
+  }
+
+  .search_select > button > span:first-child {
+    display: none;
+  }
+
+  .cont_search_area .search_select {
+    height: 36rem;
+  }
+  .search_select > button > .icon_search {
+    right: 50%;
+    transform: translateX(50%);
+    background: url(../img/sub_public/icon_search.svg) no-repeat center / cover;
+  }
+  .search_select > button {
+    background-color: transparent;
+  }
+
+  .result_list {
+    margin: 0 20rem;
+  }
+  .cont_search_area .sub_tab_search > ul > .select_box {
+    width: 100rem;
+    height: 40rem;
+    font-size: 13rem;
+  }
+  .sub_tab_search .select_box .select_box_option > li {
+    font-size: 13rem;
+  }
+
+  .sub_tab_searchA > li > .search_bar_input {
+    height: 40rem;
+  }
+  .sub_tab_searchA > li:last-child {
+    height: 40rem;
+  }
+  .sub_tab_searchA > li > .search_selectA {
+    font-size: 13rem;
+  }
+  .result_list_area tbody > .contentTitle:first-child {
+    margin-top: 0;
+  }
+
+  /* sub_tab>li(2) */
+  .procedure .process_list {
+    margin-top: 42rem;
+  }
+
+  .procedure .process_list li img {
+    width: auto;
+    height: 100%;
+  }
+  .procedure .process_list li:nth-child(1) img,
+  .procedure .process_list li:nth-child(2) img,
+  .procedure .process_list li:nth-child(3) img,
+  .procedure .process_list li:nth-child(4) img,
+  .procedure .process_list li:nth-child(5) img,
+  .procedure .process_list li:nth-child(6) img,
+  .procedure .process_list li:nth-child(7) img,
+  .procedure .process_list li:nth-child(8) img {
+    width: auto;
+    height: 24rem;
+  }
+
+  .procedure .process_list li figure > figcaption {
+    font-size: 12rem;
+  }
+
+  .procedure .process_list > li::after {
+    width: 10rem;
+    height: 7rem;
+    right: -2rem;
+    top: 19rem;
+  }
+
+  .procedure {
+    margin: 0 20rem;
+  }
+  .procedure .process_list {
+    margin-bottom: 42rem;
+  }
+  .procedure > ol > li {
+    padding-bottom: 42rem;
+  }
+  .procedure > ol > li::before {
+    left: 18rem;
+  }
+  .procedure > ol > li > .num {
+    width: 36rem;
+    height: 36rem;
+    top: -5rem;
+  }
+
+  .procedure > ol > li > .num > span {
+    font-size: 15rem;
+  }
+
+  .procedure > ol > li > .rental_cont {
+    padding-left: 50rem;
+  }
+
+  .rental_cont_top > span:first-child {
+    font-size: 18rem;
+  }
+  .rental_cont .rental_cont_bot > li {
+    font-size: 13rem;
+    line-height: 22rem;
+    padding-left: 7rem;
+  }
+
+  .rental_cont .rental_cont_bot > li > span {
+    margin-right: 5rem;
+  }
+
+  .rental_cont .rental_cont_bot > li::before {
+    top: 10rem;
+  }
+
+  .procedure > ol > li img {
+    height: 30rem;
+  }
+  .rental_cont_top > figure {
+    width: 55rem;
+  }
+
+  .procedure > ol > li:nth-child(1) img {
+    height: 30rem;
+  }
+
+  .procedure > ol > li:nth-child(2) img {
+    height: 27rem;
+  }
+  .procedure > ol > li:nth-child(3) img {
+    height: 31rem;
+  }
+  .procedure > ol > li:nth-child(4) img {
+    height: 30rem;
+  }
+  .procedure > ol > li:nth-child(5) img {
+    height: 34rem;
+  }
+  .procedure > ol > li:nth-child(6) img {
+    height: 34rem;
+  }
+  .procedure > ol > li:nth-child(7) img {
+    height: 30rem;
+  }
+
+  .procedure > ol > li:nth-child(8) img {
+    height: 32rem;
+  }
+
+  .rental_cont .rental_cont_note {
+    margin-top: 45rem;
+    padding: 31rem 20rem 21rem;
+  }
+  .rental_cont .rental_cont_note > span {
+    font-size: 13rem;
+    padding: 6rem 12rem;
+    left: 18rem;
+  }
+
+  .rental_cont_note > ul > li {
+    font-size: 13rem;
+    line-height: 22rem;
+    padding-left: 7rem;
+    word-break: keep-all;
+  }
+
+  /* sub_tab>li(3) */
+  .rental_fee {
+    margin: 50rem 20rem 0;
+  }
+  .rental_fee .title_area > p {
+    font-size: 20rem;
+    font-weight: 700;
+  }
+  .rental_fee .title_area {
+    margin-bottom: 24rem;
+  }
+
+  .text_area > li > table th,
+  .text_area > li > table td {
+    font-size: 12rem;
+    padding: 10rem 16rem;
+  }
+  .text_area > li > table td {
+    font-size: 11rem;
+  }
+
+  .rental_fee .table_box {
+    overflow-x: scroll;
+    width: 100%;
+    margin-bottom: 14rem;
+  }
+  .rental_fee table {
+    width: 420px;
+  }
+  .text_area > li > table {
+    margin-bottom: 0;
+  }
+  .text_area > li > table td > p {
+    line-height: 22rem;
+    padding-left: 7rem;
+  }
+
+  .text_area > li > .text_area_note {
+    padding: 10rem 16rem;
+  }
+  .text_area > li > .text_area_note > li {
+    font-size: 12rem;
+    line-height: 22rem;
+    padding-left: 18rem;
+    margin-top: 4rem;
+  }
+  .text_area > li > .text_area_note > li::before {
+    width: 14rem;
+    height: 14rem;
+    top: 4rem;
+  }
+
+  .text_area_text .text_area_note {
+    padding: 10rem 16rem;
+  }
+  .text_area_text .text_area_note > li {
+    font-size: 12rem;
+    line-height: 22rem;
+    padding-left: 18rem;
+    margin-top: 4rem;
+  }
+  .text_area_text .text_area_note > li::before {
+    width: 14rem;
+    height: 14rem;
+    top: 4rem;
+  }
+  .text_area_text .text_area_note > li + li {
+    margin-top: 8rem;
+  }
+
+  .text_area > li > .text_area_title {
+    font-size: 15rem;
+    margin-bottom: 10rem;
+  }
+  .text_area > li {
+    margin-bottom: 36rem;
+  }
+  .text_area > li > .text_area_text > li {
+    font-size: 13rem;
+    line-height: 22rem;
+    padding-left: 7rem;
+  }
+  .text_area > li > .text_area_text > li > span {
+    font-size: 13rem;
+    line-height: 22rem;
+    margin-right: 5rem;
+  }
+  .text_area > li > .text_area_text > li::before {
+    top: 9rem;
+  }
+  .sub_tab_result .rental_fee > div + div {
+    margin-top: 54rem;
+  }
+
+  /* sub_tab>li(4) */
+  .sub_tab_result .data {
+    margin: 50rem 20rem 0;
+  }
+  .data .title_area > p {
+    font-size: 20rem;
+    font-weight: 700;
+  }
+
+  .data .title_area {
+    margin-bottom: 24rem;
+  }
+  .data .text_area > li > dl > dt {
+    font-size: 15rem;
+    margin-bottom: 10rem;
+  }
+
+  .data .result_list {
+    margin: 0;
+  }
+  .sub_tab_result .result_list_area > tbody td {
+    font-size: 13rem;
+  }
+
+  .data .text_area > li > dl > dd {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .data .text_area > li > dl > dd > a + a {
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* pagination */
+  .pagination #first > span,
+  .pagination #last > span {
+    width: 8px;
+    height: 8px;
+  }
+
+  .pagination #prev > span,
+  .pagination #next > span {
+    width: 5px;
+    height: 8px;
+  }
+
+  .pagination > li > a {
+    width: 29px;
+    height: 29px;
+    font-size: 14px;
+    line-height: 29px;
+  }
+
+  /* //pagination */
+
+  .sub_tab_searchA .select_box {
+    position: relative;
+  }
+  .cont_search_area {
+    margin-bottom: 16rem;
+    padding: 16rem 0;
+  }
+
+  .sub_tab_box {
+    margin-bottom: 35rem;
+  }
+
+  .cont_search_area .sub_tab_search > ul > .select_box {
+    width: 85rem;
+  }
+  .sub_tab_searchA > li:nth-child(2) {
+    width: calc(100% - 98rem);
+    margin-right: 0;
+  }
+
+  .sub_tab_searchA > li:last-child {
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    right: 20rem;
+  }
+  .sub_tab_searchA > li > .search_selectA {
+    background: transparent;
+  }
+
+  .sub_tab_searchA > li > .search_selectA > img {
+    display: block;
+  }
+  .sub_tab_searchA > li > .search_selectA > span {
+    display: none;
+  }
+}
+
+@media (max-width: 410px) {
+  /* pagination */
+
+  .pagination > li > a {
+    width: 27px;
+    height: 26px;
+    line-height: 26px;
+  }
+
+  /* //pagination */
+}

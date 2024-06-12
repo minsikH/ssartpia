@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ssartpia</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/rental_performance.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <header>
+        <ul class="header_topUtil">
+          <li class="topUtil_english">
+            <a href="javascript:;"
+              >English Ver.
+              <img src="../img/index/header/icon_browser.svg" alt=""
+            /></a>
+          </li>
+          <li class="topUtil_login"><a href="javascript:;">로그인</a></li>
+          <li class="topUtil_signIn"><a href="javascript:;">회원가입</a></li>
+          <li class="topUtil_ontpia">
+            <a href="javascript:;"><i>가상미술관</i> <span>ONTPIA</span></a>
+          </li>
+          <li class="topUtil_reserve">
+            <a href="javascript:;"><i>공연</i><span>예매하기</span></a>
+          </li>
+        </ul>
+        <div class="inner">
+          <h1>
+            <a href="../#"
+              ><img src="../img/index/header/logo.svg" alt="logo" /><span
+                class="hidden"
+                >logo</span
+              ></a
+            >
+          </h1>
+          <nav>
+            <ul class="gnb">
+              <li>
+                <a href="../performance/plan.html"
+                  >공연<span>PERFORMANCE</span></a
+                >
+                <ul class="sub_gnb">
+                  <li><a href="../performance/plan.html">기획공연</a></li>
+                  <li><a href="../performance/schedule.html">공연일정</a></li>
+                  <li><a href="javascript:;">티켓예매</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../exhibition/plan.html"
+                  >전시<span>EXHIBITION</span></a
+                >
+                <ul class="sub_gnb">
+                  <li><a href="../exhibition/plan.html">기획전시</a></li>
+                  <li><a href="../exhibition/schedule.html">전시일정</a></li>
+                  <li><a href="javascript:;">미술작품대여제</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../academy/class.html"
+                  >예술아카데미<span>ACADEMY</span></a
+                >
+                <ul class="sub_gnb">
+                  <li><a href="../academy/class.html">수강신청</a></li>
+                  <li><a href="../academy/ebook.html">E-Book</a></li>
+                  <li><a href="javascript:;">나의강좌</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../rental/performance.html"
+                  >대관안내<span>RENTAL INFO</span></a
+                >
+                <ul class="sub_gnb">
+                  <li><a href="../rental/performance.html">공연대관</a></li>
+                  <li><a href="../rental/exhibition.html">전시대관</a></li>
+                  <li><a href="javascript:;">온라인 대관신청</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../news/notification.html"
+                  >뉴스&middot;소식<span>NEWS</span></a
+                >
+                <ul class="sub_gnb">
+                  <li><a href="../news/notification.html">알림마당</a></li>
+                  <li><a href="../news/press.html">언론보도</a></li>
+                  <li><a href="javascript:;">갤러리</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../community/membership.html"
+                  >커뮤니티<span>COMMUNITY</span></a
+                >
+                <ul class="sub_gnb">
+                  <li><a href="../community/membership.html">회원제도</a></li>
+                  <li><a href="../community/cs.html">1:1고객센터</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../institution/introduction.html"
+                  >기관소개<span>INSTITUTION</span></a
+                >
+                <ul class="sub_gnb">
+                  <li>
+                    <a href="../institution/introduction.html">아트피아소개</a>
+                  </li>
+                  <li><a href="javascript:;">상주예술단체</a></li>
+                  <li><a href="javascript:;">시설소개</a></li>
+                  <li>
+                    <a href="../institution/directions.html">오시는 길</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header_util">
+            <li class="btn_search">
+              <a href="javascript:;"
+                ><img
+                  src="../img/index/header/icon_search.svg"
+                  alt="search"
+                /><span class="hidden">검색하기</span></a
+              >
+            </li>
+            <li class="btn_menu">
+              <a href="javascript:;">
+                <span></span>
+                <span></span>
+                <p class="hidden">메뉴 열고 닫기</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="search_area">
+          <li class="btn_menu">
+            <a href="javascript:;">
+              <span></span>
+              <span></span>
+              <p class="hidden">닫기</p>
+            </a>
+          </li>
+          <div class="search_inner">
+            <form>
+              <input
+                type="text"
+                class="search_bar"
+                placeholder="검색어를 입력해주세요."
+              />
+              <button type="submit" class="btn_search">
+                <img src="../img/index/header/icon_search.svg" alt="search" />
+              </button>
+            </form>
+            <div class="keyword">
+              <p>문화인을 위한 공간, 수성아트피아</p>
+              <ul>
+                <li><a href="../performance/plan.html">#공연일정보기</a></li>
+                <li><a href="javascript:;">#티켓예매</a></li>
+                <li><a href="../academy/class.html">#예술아카데미</a></li>
+                <li><a href="../academy/class.html">#수강신청</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="menu_area">
+          <div class="inner">
+            <div class="menu_bgLine">
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+            <div class="menu_gnb_area">
+              <ul class="menu_gnb">
+                <li>
+                  <a href="javascript:;">공연<span>PERFORMANCE</span></a>
+                  <ul class="menu_subGnb">
+                    <li><a href="../performance/plan.html">기획공연</a></li>
+                    <li><a href="../performance/schedule.html">공연일정</a></li>
+                    <li><a href="javascript:;">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;">전시<span>EXHIBITION</span></a>
+                  <ul class="menu_subGnb">
+                    <li><a href="../exhibition/plan.html">기획전시</a></li>
+                    <li><a href="../exhibition/schedule.html">전시일정</a></li>
+                    <li><a href="javascript:;">미술작품대여제</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;">예술아카데미<span>ACADEMY</span></a>
+                  <ul class="menu_subGnb">
+                    <li><a href="../academy/class.html">수강신청</a></li>
+                    <li><a href="../academy/ebook.html">E-Book</a></li>
+                    <li><a href="javascript:;">나의강좌</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;">대관안내<span>RENTAL INFO</span></a>
+                  <ul class="menu_subGnb">
+                    <li><a href="../rental/performance.html">공연대관</a></li>
+                    <li><a href="../rental/exhibition.html">전시대관</a></li>
+                    <li><a href="javascript:;">온라인 대관신청</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;">뉴스&middot;소식<span>NEWS</span></a>
+                  <ul class="menu_subGnb">
+                    <li><a href="../news/notification.html">알림마당</a></li>
+                    <li><a href="../news/press.html">언론보도</a></li>
+                    <li><a href="javascript:;">갤러리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;">커뮤니티<span>COMMUNITY</span></a>
+                  <ul class="menu_subGnb">
+                    <li><a href="../community/membership.html">회원제도</a></li>
+                    <li><a href="../community/cs.html">1:1고객센터</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;">기관소개<span>INSTITUTION</span></a>
+                  <ul class="menu_subGnb">
+                    <li>
+                      <a href="../institution/introduction.html"
+                        >아트피아소개</a
+                      >
+                    </li>
+                    <li><a href="javascript:;">상주예술단체</a></li>
+                    <li><a href="javascript:;">시설소개</a></li>
+                    <li>
+                      <a href="../institution/directions.html">오시는 길</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="menu_img">
+              <figure>
+                <img src="../img/index/header/img_full_01.jpg" alt="" />
+              </figure>
+              <figure>
+                <img src="../img/index/header/img_full_02.jpg" alt="" />
+              </figure>
+              <figure>
+                <img src="../img/index/header/img_full_03.jpg" alt="" />
+              </figure>
+            </div>
+            <ul class="menu_util">
+              <li><a href="javascript:;">로그인</a></li>
+              <li><a href="javascript:;">회원가입</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- aside -->
+      <aside class="aside_sns">
+        <ul>
+          <li>
+            <a href="#" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.5 24">
+                <path
+                  d="M8.1,24V13.1h3.7l.5-4.3h-4.2v-2.7c0-1.3,.3-2.1,2.1-2.1h2.3V.2c-.4-.1-1.8-.2-3.3-.2C5.9,0,3.7,2,3.7,5.6v3.1H0v4.3H3.7v11h4.4Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16">
+                <path
+                  d="M18.5,0H3.5C1.6,0,0,1.6,0,3.5V12.5c0,1.9,1.6,3.5,3.5,3.5h15c1.9,0,3.5-1.6,3.5-3.5V3.5c0-1.9-1.6-3.5-3.5-3.5ZM8.7,11.3V4.7l6.1,3.2-6.1,3.4Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4.7,20H15.3c2.6,0,4.7-2.1,4.7-4.7V4.7c0-2.6-2.1-4.7-4.7-4.7H4.7C2.1,0,0,2.1,0,4.7V15.3c0,2.6,2.1,4.7,4.7,4.7ZM16.6,1.9c.8,0,1.5,.7,1.5,1.5s-.7,1.5-1.5,1.5-1.5-.7-1.5-1.5,.7-1.5,1.5-1.5Zm-6.6,1.7c3.5,0,6.4,2.8,6.4,6.4s-2.9,6.4-6.4,6.4-6.4-2.8-6.4-6.4S6.5,3.6,10,3.6Z"
+                />
+                <path
+                  d="M10,14.1c2.3,0,4.1-1.8,4.1-4.1s-1.8-4.1-4.1-4.1-4.1,1.8-4.1,4.1,1.8,4.1,4.1,4.1Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg
+                id="Layer_2"
+                data-name="Layer 2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 21.9147 18.5251"
+              >
+                <path
+                  class="cls-1"
+                  d="M12.3004,7.1646c-.5043,0-.9135,.4093-.9135,.9135,0,.5037,.4093,.913,.9135,.913s.913-.4093,.913-.913c0-.5043-.4087-.9135-.913-.9135Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M17.3009,7.2326c-.4663,0-.845,.3787-.845,.8455,0,.4657,.3787,.8443,.845,.8443s.8449-.3787,.8449-.8443c0-.4669-.3787-.8455-.8449-.8455Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M18.101,0H3.8124C1.7065,0,0,1.7077,0,3.8136v7.4011c0,2.1053,1.7065,3.8129,3.8124,3.8129h5.3717l1.7726,3.4974,2.0085-3.4974h5.1358c2.106,0,3.8136-1.7077,3.8136-3.8129V3.8136c0-2.106-1.7077-3.8136-3.8136-3.8136ZM4.7327,10.1252c-.3891,0-.7518-.1072-1.0643-.2923v.2647h-1.4295V4.2964h1.4295v1.9172c.3125-.1838,.6752-.2917,1.0643-.2917,1.1617,0,2.1023,.9411,2.1023,2.1016,0,1.1611-.9405,2.1016-2.1023,2.1016Zm4.4557-3.8675v3.8675h-1.3725v-3.8675c0-.8401-.5325-.8401-.5325-.8401v-1.1213c1.2567-.0184,1.6844,.8149,1.8302,1.4013,.0705,.2843,.0748,.511,.0748,.5526v.0074Zm3.112,4.0403c-1.2267,0-2.2211-.9938-2.2211-2.2199s.9944-2.2205,2.2211-2.2205c1.2255,0,2.2199,.9938,2.2199,2.2205s-.9944,2.2199-2.2199,2.2199Zm4.7927,1.8253v-1.1195s1.2451,.1446,1.2451-.5606v-.5944c-.3046,.1789-.6587,.2831-1.0373,.2831-1.1336,0-2.0545-.9197-2.0545-2.0539,0-1.1348,.9209-2.0551,2.0545-2.0551,.3786,0,.7328,.1048,1.0373,.2837v-.1795h1.3284v4.316s.2898,1.6801-2.5735,1.6801Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M4.5795,7.1689c-.4725,0-.856,.383-.856,.8547,0,.4724,.3835,.8547,.856,.8547,.4718,0,.8541-.3824,.8541-.8547,0-.4718-.3824-.8547-.8541-.8547Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- bg_line -->
+      <ul class="bg_line">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <!-- lnb_area -->
+      <div class="lnb_area">
+        <div class="inner">
+          <div class="cont_inner">
+            <ul class="lnb">
+              <li class="lnb_home">
+                <a href="../#"
+                  ><img src="../img/sub_public/icon_home.svg" alt="홈"
+                /></a>
+              </li>
+              <li class="lnb_depth1">대관안내</li>
+              <li class="lnb_depth2">
+                <a href="javascript:;">
+                  <span>공연대관</span>
+                </a>
+                <ul class="sub_depth2">
+                  <li><a href="../rental/performance.html">공연대관</a></li>
+                  <li><a href="../rental/exhibition.html">전시대관</a></li>
+                  <li class="off"><a href="javascript:;">온라인대관신청</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- main -->
+      <main>
+        <div class="inner">
+          <div class="cont_inner">
+            <div class="title_text">
+              <p class="en_title">RENTAL INFO</p>
+              <p class="ko_title">공연대관</p>
+            </div>
+            <!-- sub_tab -->
+            <div class="sub_tab_box">
+              <ul class="sub_tab">
+                <li class="on">
+                  <a
+                    href="javascript:;"
+                    class="filter-tab filterOn"
+                    data-tab="announcement"
+                    >대관공고</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" class="filter-tab" data-tab="procedure"
+                    >대관절차</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" class="filter-tab" data-tab="fees"
+                    >대관료</a
+                  >
+                </li>
+                <li><a href="javascript:;" class="filter-tab">무대자료</a></li>
+                <li>
+                  <a href="javascript:;" class="filter-tab">공연장안전교육</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- cont_result_area -->
+            <div class="cont_result_area">
+              <!-- sub_tab_resultA -->
+              <div class="sub_tab_resultA">
+                <div class="cont_inner">
+                  <!-- sub_tab_result -->
+                  <div class="sub_tab_result sub_tab_result01">
+                    <div class="result_list on">
+                      <!-- cont_search_area -->
+                      <div class="cont_search_area">
+                        <div class="cont_inner">
+                          <div class="sub_tab_search">
+                            <!-- sub_tab_searchA -->
+
+                            <ul class="sub_tab_searchA">
+                              <li class="select_box">
+                                <a href="javascript:;">
+                                  <span class="select_box_result">전체</span>
+                                  <img
+                                    src="../img/sub_public/icon_arrow_down.svg"
+                                    alt=""
+                                  />
+                                </a>
+                                <ul
+                                  class="select_box_option"
+                                  style="display: none"
+                                >
+                                  <li><a href="javascript:;">전체</a></li>
+                                  <li><a href="javascript:;">제목</a></li>
+                                  <li><a href="javascript:;">작성자</a></li>
+                                  <li><a href="javascript:;">내용</a></li>
+                                </ul>
+                              </li>
+                              <li>
+                                <input type="text" class="search_bar_input" />
+                              </li>
+                              <li>
+                                <button type="submit" class="search_selectA">
+                                  <img
+                                    src="../img/sub_public/icon_search.svg"
+                                    alt="검색"
+                                  />
+                                  <span>검색</span>
+                                </button>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <table class="result_list_area">
+                        <caption>
+                          게시판
+                        </caption>
+                        <colgroup>
+                          <col data-table="num" style="width: 7%" />
+                          <col data-table="title" />
+                          <col data-table="writer" style="width: 15%" />
+                          <col data-table="date" style="width: 15%" />
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th scope="col" data-table="num">No.</th>
+                            <th scope="col" data-table="title">제목</th>
+                            <th scope="col" data-table="writer">작성자</th>
+                            <th scope="col" data-table="date">작성일</th>
+                          </tr>
+                        </thead>
+                        <tbody></tbody>
+                      </table>
+
+                      <ul
+                        id="pagination"
+                        class="pagination"
+                        display="none"
+                      ></ul>
+                    </div>
+                    <div class="procedure">
+                      <ul class="process_list">
+                        <li>
+                          <a href="#list01">
+                            <figure>
+                              <img
+                                src="../img/sub_rental/icon_rental_01.svg"
+                                alt=""
+                              />
+                              <figcaption>공고</figcaption>
+                            </figure>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#list02">
+                            <figure>
+                              <img
+                                src="../img/sub_rental/icon_rental_02.svg"
+                                alt=""
+                              />
+                              <figcaption>신청</figcaption>
+                            </figure>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#list03">
+                            <figure>
+                              <img
+                                src="../img/sub_rental/icon_rental_03.svg"
+                                alt=""
+                              />
+                              <figcaption>심의</figcaption>
+                            </figure>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#list04">
+                            <figure>
+                              <img
+                                src="../img/sub_rental/icon_rental_04.svg"
+                                alt=""
+                              />
+                              <figcaption>승인 여부</figcaption>
+                            </figure>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#list05">
+                            <figure>
+                              <img
+                                src="../img/sub_rental/icon_rental_05.svg"
+                                alt=""
+                              />
+                              <figcaption>확정</figcaption>
+                            </figure>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#list06">
+                            <figure>
+                              <img
+                                src="../img/sub_rental/icon_rental_06.svg"
+                                alt=""
+                              />
+                              <figcaption>대관료 납부</figcaption>
+                            </figure>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#list07">
+                            <figure>
+                              <img
+                                src="../img/sub_rental/icon_rental_08.svg"
+                                alt=""
+                              />
+                              <figcaption>공연 진행</figcaption>
+                            </figure>
+                          </a>
+                        </li>
+                      </ul>
+                      <ol>
+                        <li id="list01">
+                          <div class="num">
+                            <span>01</span>
+                          </div>
+                          <div class="rental_cont">
+                            <div class="rental_cont_top">
+                              <span>대관 <strong>공고</strong></span>
+                              <span class="line"></span>
+                              <figure>
+                                <img
+                                  src="../img/sub_rental/icon_rental_01.svg"
+                                  alt=""
+                                />
+                              </figure>
+                            </div>
+                            <ul class="rental_cont_bot">
+                              <li>
+                                <span>정기대관</span>홈페이지를 통해 연간 1회
+                                공지
+                              </li>
+                              <li>
+                                <span>수시대관</span>정기대관 일정 후 유휴일정이
+                                있는 경우
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+
+                        <li id="list02">
+                          <div class="num">
+                            <span>02</span>
+                          </div>
+                          <div class="rental_cont">
+                            <div class="rental_cont_top">
+                              <span>대관 <strong>신청</strong></span>
+                              <span class="line"></span>
+                              <figure>
+                                <img
+                                  src="../img/sub_rental/icon_rental_02.svg"
+                                  alt=""
+                                />
+                              </figure>
+                            </div>
+                            <ul class="rental_cont_bot">
+                              <li>
+                                <span>신청방법</span>수성아트피아 온라인 접수
+                              </li>
+                              <li>
+                                <span>제출서류</span>공연계획서, 증빙서류 등
+                              </li>
+                            </ul>
+                            <div class="rental_cont_note">
+                              <span>대관 신청제한</span>
+                              <ul>
+                                <li>행사성 공연 및 전시</li>
+
+                                <li>정당행사 등 정치성 성격의 행사</li>
+
+                                <li>종교행사 및 종교성 공연</li>
+
+                                <li>
+                                  비전문성 작품 또는 순수 아마추어에 대한
+                                  대관(예: 유치원∙학교 발표회, 졸업연주회,
+                                  아마추어 콩쿨, 축제 등)
+                                </li>
+
+                                <li>단순한 친목 도모를 위한 공연∙행사</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li id="list03">
+                          <div class="num">
+                            <span>03</span>
+                          </div>
+                          <div class="rental_cont">
+                            <div class="rental_cont_top">
+                              <span>심사 <strong>심의</strong></span>
+                              <span class="line"></span>
+                              <figure>
+                                <img
+                                  src="../img/sub_rental/icon_rental_03.svg"
+                                  alt=""
+                                />
+                              </figure>
+                            </div>
+                            <ul class="rental_cont_bot">
+                              <li>
+                                수성아트피아 운영 계획을 참작하여 공연기획능력
+                                및 의도를 고려하여 심사
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+
+                        <li id="list04">
+                          <div class="num">
+                            <span>04</span>
+                          </div>
+                          <div class="rental_cont">
+                            <div class="rental_cont_top">
+                              <span>승인 <strong>여부</strong></span>
+                              <span class="line"></span>
+                              <figure>
+                                <img
+                                  src="../img/sub_rental/icon_rental_04.svg"
+                                  alt=""
+                                />
+                              </figure>
+                            </div>
+                            <ul class="rental_cont_bot">
+                              <li>
+                                심의 결과에 따라 원안승인, 조건부 승인, 불허
+                                통보
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+
+                        <li id="list05">
+                          <div class="num">
+                            <span>05</span>
+                          </div>
+                          <div class="rental_cont">
+                            <div class="rental_cont_top">
+                              <span>대관 <strong>확정</strong></span>
+                              <span class="line"></span>
+                              <figure>
+                                <img
+                                  src="../img/sub_rental/icon_rental_05.svg"
+                                  alt=""
+                                />
+                              </figure>
+                            </div>
+                            <ul class="rental_cont_bot">
+                              <li>
+                                사용허가통지서에서 정한 기한이내에 사용료의
+                                30%를 사용계약금으로 납부
+                              </li>
+                              <li>기간 내 계약금 미납 시 허가 취소</li>
+                            </ul>
+                          </div>
+                        </li>
+
+                        <li id="list06">
+                          <div class="num">
+                            <span>06</span>
+                          </div>
+                          <div class="rental_cont">
+                            <div class="rental_cont_top">
+                              <span>대관료 <strong>잔금납부</strong></span>
+                              <span class="line"></span>
+                              <figure>
+                                <img
+                                  src="../img/sub_rental/icon_rental_06.svg"
+                                  alt=""
+                                />
+                              </figure>
+                            </div>
+                            <ul class="rental_cont_bot">
+                              <li>사용예정일 70일전에 납부</li>
+                              <li>
+                                기한내 사용료 잔금을 완납하지 않은 경우에는
+                                시설물의 사용을 포기한 것으로 간주
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+
+                        <li id="list07">
+                          <div class="num">
+                            <span>07</span>
+                          </div>
+                          <div class="rental_cont">
+                            <div class="rental_cont_top">
+                              <span>공연 <strong>진행</strong></span>
+                              <span class="line"></span>
+                              <figure>
+                                <img
+                                  src="../img/sub_rental/icon_rental_08.svg"
+                                  alt=""
+                                />
+                              </figure>
+                            </div>
+                            <ul class="rental_cont_bot">
+                              <li>
+                                사용 일에 추가로 신청하는 부대시설 등의 경우
+                                대관료는 사용 마지막 날까지 납부
+                              </li>
+                              <li>
+                                설치 및 준비 진행은 상세 스탭회의를 반드시
+                                거쳐서 상호 합의하여 결정
+                              </li>
+                              <li>공연 진행 시 화환 반입 불가</li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ol>
+                    </div>
+
+                    <div class="rental_fee">
+                      <div>
+                        <div class="title_area">
+                          <p>공연대관 <strong>대관료</strong></p>
+                        </div>
+                        <ul class="text_area">
+                          <li>
+                            <p class="unit"><span>단위:</span> 원</p>
+                            <div class="table_box">
+                              <table>
+                                <thead>
+                                  <tr>
+                                    <th rowspan="2">시설명</th>
+                                    <th rowspan="2">구분</th>
+                                    <th rowspan="2">장르</th>
+                                    <th colspan="2">사용료</th>
+                                  </tr>
+                                  <tr>
+                                    <th>준비</th>
+                                    <th>공연(1회당)</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td rowspan="12">대극장</td>
+                                    <td rowspan="3">오전</td>
+                                    <td>순수공연</td>
+                                    <td>600,000</td>
+                                    <td>1,100,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>뮤지컬</td>
+                                    <td>700,000</td>
+                                    <td>1,300,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>대중음악</td>
+                                    <td>900,000</td>
+                                    <td>1,600,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td rowspan="3">오후</td>
+                                    <td>순수공연</td>
+                                    <td>600,000</td>
+                                    <td>1,300,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>뮤지컬</td>
+                                    <td>700,000</td>
+                                    <td>1,500,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>대중음악</td>
+                                    <td>900,000</td>
+                                    <td>1,800,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td rowspan="3">야간</td>
+                                    <td>순수공연</td>
+                                    <td>800,000</td>
+                                    <td>1,300,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>뮤지컬</td>
+                                    <td>900,000</td>
+                                    <td>1,500,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>대중음악</td>
+                                    <td>1,100,000</td>
+                                    <td>1,800,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td rowspan="3">심야<br />(1시간당)</td>
+                                    <td>순수공연</td>
+                                    <td>400,000</td>
+                                    <td rowspan="3">-</td>
+                                  </tr>
+                                  <tr>
+                                    <td>뮤지컬</td>
+                                    <td>500,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>대중음악</td>
+                                    <td>600,000</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td rowspan="12">소극장</td>
+                                    <td rowspan="3">오전</td>
+                                    <td>순수공연</td>
+                                    <td>250,000</td>
+                                    <td>400,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>뮤지컬</td>
+                                    <td>300,000</td>
+                                    <td>500,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>대중음악</td>
+                                    <td>300,000</td>
+                                    <td>500,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td rowspan="3">오후</td>
+                                    <td>순수공연</td>
+                                    <td>250,000</td>
+                                    <td>450,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>뮤지컬</td>
+                                    <td>300,000</td>
+                                    <td>550,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>대중음악</td>
+                                    <td>300,000</td>
+                                    <td>550,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td rowspan="3">야간</td>
+                                    <td>순수공연</td>
+                                    <td>300,000</td>
+                                    <td>450,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>뮤지컬</td>
+                                    <td>400,000</td>
+                                    <td>550,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>대중음악</td>
+                                    <td>400,000</td>
+                                    <td>550,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td rowspan="3">심야<br />(1시간당)</td>
+                                    <td>순수공연</td>
+                                    <td>200,000</td>
+                                    <td rowspan="3">-</td>
+                                  </tr>
+                                  <tr>
+                                    <td>뮤지컬</td>
+                                    <td>250,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>대중음악</td>
+                                    <td>250,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td rowspan="2">
+                                      기타대관<br />(방송,영화,녹음,<br />녹화
+                                      CF제작)
+                                    </td>
+                                    <td colspan="2">1일 3시간기준(대극장)</td>
+                                    <td colspan="2">2,000,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">1일 3시간기준(소극장)</td>
+                                    <td colspan="2">1,100,000</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td rowspan="2">연습실</td>
+                                    <td colspan="2">1회</td>
+                                    <td colspan="2">60,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">1일</td>
+                                    <td colspan="2">150,000</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td rowspan="2">알토홀</td>
+                                    <td colspan="2">1회(2시간 기준)</td>
+                                    <td colspan="2">
+                                      150,000(시간초과 시간당5만원)
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <ul class="text_area_note">
+                              <li>
+                                주말 및 공휴일은 기본사용료의 20%를
+                                가산함(부대설비 제외)
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <p class="text_area_title">장르구분</p>
+                            <ul class="text_area_text">
+                              <li>
+                                <span>순수공연</span>클래식, 국악, 무용, 연극,
+                                재즈 등 순수예술 공연
+                              </li>
+                              <li>
+                                <span>뮤지컬</span>뮤지컬, 넌버벌, 악극 등
+                              </li>
+                              <li>
+                                <span>대중음악</span>가요, 팝, 뉴에이지 등
+                                대중음악과 기업마케팅 공연, 행사성 공연 등
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <p class="text_area_title">사용료 포함내역</p>
+                            <ul class="text_area_text">
+                              <li>기본 무대, 조명, 객석, 전기료</li>
+                              <li>공연 및 전시장 냉난방비</li>
+                              <li>
+                                <ul class="text_area_note">
+                                  <li>공연장 - 공연시 무료, 전시장 - 무료</li>
+                                  <li>공연대관 공연시작 1시간 전 ~ 공연종료</li>
+                                  <li>
+                                    시연회 및 공개리허설은 공연대관에 준하며,
+                                    냉난방비는 별도
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <p class="text_area_title">사용시간</p>
+                            <ul class="text_area_text">
+                              <li><span>오전</span>09:00~12:00</li>
+                              <li><span>오후</span>13:00~17:00</li>
+                              <li><span>야간</span>18:00~22:00</li>
+                              <li><span>심야</span>22:00~다음날 08:00까지</li>
+                              <li>
+                                <ul class="text_area_note">
+                                  <li>심야 사용 시 관장과 사전 협의</li>
+                                  <li>
+                                    개별기준에서 정하고 있는 각 기본 사용시간
+                                    미만을 사용하여도 기본시간을 사용한 것으로
+                                    본다.
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <p class="text_area_title">초과시간 이용료 산정</p>
+                            <ul class="text_area_text">
+                              <li>
+                                전시실은 매시간 초과마다 사용료의 30%를
+                                부과한다.
+                              </li>
+                              <li>
+                                당일 공연을 위한 연습실 사용은 관장의 사전 허가
+                                하에 무료로 할 수 있다.
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <p class="text_area_title">
+                              장기사용 할인 (전시실, 연습실 제외)
+                            </p>
+                            <ul class="text_area_text">
+                              <li>
+                                7회 이상 계속 공연하는 경우에는 공연 사용료(준비
+                                제외)의 10%범위, 14회 이상 계속 사용하는
+                                경우에는 20%범위 내에서 사전협의에 의해 할인해
+                                줄 수 있다.
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <ul class="text_area_text">
+                              <li>
+                                <ul class="text_area_note">
+                                  <li>
+                                    비공연대관일 경우 기본대관료의 20%를
+                                    가산한다.
+                                  </li>
+                                  <li>철수는 준비사용료에 준한다.</li>
+                                  <li>모든 사용료는 부가세 별도.</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <div class="title_area">
+                          <p>부대설비 <strong>사용료</strong></p>
+                        </div>
+                        <ul class="text_area">
+                          <li>
+                            <p class="unit">단위: 원</p>
+                            <div class="table_box">
+                              <table>
+                                <thead>
+                                  <tr>
+                                    <th>시설명</th>
+                                    <th colspan="3">구분</th>
+                                    <th>기준</th>
+                                    <th>사용료</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td rowspan="32">대극장</td>
+                                    <td rowspan="9">조명</td>
+                                    <td colspan="2">
+                                      팔로우스포트라이트(2Kw 대당)
+                                    </td>
+
+                                    <td>1대 / 1일</td>
+                                    <td>30,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">포그머신</td>
+
+                                    <td>1일</td>
+                                    <td>20,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">드라이아이스기</td>
+
+                                    <td>1일</td>
+                                    <td>20,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">Par64</td>
+
+                                    <td>1대 / 1일</td>
+                                    <td>2,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">Par46</td>
+
+                                    <td>1조(8대) / 1일</td>
+                                    <td>5,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">Black Light</td>
+
+                                    <td>1일</td>
+                                    <td>10,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">Moving Light</td>
+
+                                    <td>1대 / 1일</td>
+                                    <td>50,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">LED Moving Light</td>
+
+                                    <td>1대 / 1일</td>
+                                    <td>15,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">Strobe</td>
+
+                                    <td>1일</td>
+                                    <td>5,000</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td rowspan="8">음향 &middot; 영상</td>
+                                    <td colspan="2">녹음</td>
+
+                                    <td>1회</td>
+                                    <td>50,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">녹화</td>
+
+                                    <td>1회</td>
+                                    <td>60,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">무선마이크</td>
+
+                                    <td>1대 /1일</td>
+                                    <td>30,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">유선마이크</td>
+
+                                    <td>3대 / 1일</td>
+                                    <td>10,000(추가 시 대당 5천원)</td>
+                                  </tr>
+                                  <tr>
+                                    <td rowspan="3">
+                                      영상장비 (노트북 대관자 부담)
+                                    </td>
+                                    <td>전면 프로젝터 (20,000 ANSI)</td>
+                                    <td rowspan="3">1일</td>
+                                    <td>100,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>후면 프로젝터 (30,500 ANSI)</td>
+
+                                    <td>150,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>자막용 PDP (85인치 디스 플레이)</td>
+
+                                    <td>50,000</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td colspan="2">모니터스피커(1대 기준)</td>
+
+                                    <td>1대 / 1일</td>
+                                    <td>40,000</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td rowspan="8">무대 시설</td>
+                                    <td colspan="2">음향반사판</td>
+
+                                    <td>1일</td>
+                                    <td>80,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">오케스트라 피트</td>
+
+                                    <td>1일</td>
+                                    <td>40,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">승강무대, 슬라이딩 무대</td>
+
+                                    <td>1일</td>
+                                    <td>50,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td rowspan="3">덧마루</td>
+                                    <td>10평 미만</td>
+                                    <td rowspan="3">1일</td>
+                                    <td>30,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>10 ~ 20평</td>
+
+                                    <td>50,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>20평 초과</td>
+
+                                    <td>80,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">무용매트</td>
+
+                                    <td>1일</td>
+                                    <td>100,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">보면대ㆍ의자</td>
+
+                                    <td>20개 이상 / 1일</td>
+                                    <td>30,000</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td rowspan="7">악기</td>
+                                    <td colspan="2">피아노(스타인웨이)</td>
+
+                                    <td>1일</td>
+                                    <td>100,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">팀파니</td>
+
+                                    <td>1일</td>
+                                    <td>50,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">콘트라베이스</td>
+
+                                    <td>1일</td>
+                                    <td>20,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">베이스드럼(대북)</td>
+
+                                    <td>1일</td>
+                                    <td>20,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">세트드럼</td>
+
+                                    <td>1일</td>
+                                    <td>20,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">심벌즈</td>
+
+                                    <td>1일</td>
+                                    <td>10,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">실로폰</td>
+
+                                    <td>1일</td>
+                                    <td>20,000</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td rowspan="7">소극장</td>
+                                    <td rowspan="6">음향 ㆍ 영상</td>
+                                    <td colspan="2">녹음</td>
+
+                                    <td>1회</td>
+                                    <td>30,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">녹화</td>
+
+                                    <td>1회</td>
+                                    <td>40,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">무선마이크</td>
+
+                                    <td>1대 / 1회</td>
+                                    <td>30,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">유선마이크</td>
+
+                                    <td>3대 / 1회</td>
+                                    <td>10,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">
+                                      빔 프로젝터(12,000ANSI)<br />(노트북
+                                      대관자 부담)
+                                    </td>
+
+                                    <td>1일</td>
+                                    <td>80,000</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td colspan="2">모니터스피커</td>
+
+                                    <td>1대 / 1일</td>
+                                    <td>20,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>악기</td>
+                                    <td colspan="2">피아노(스타인웨이)</td>
+
+                                    <td>1일</td>
+                                    <td>100,000</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td rowspan="12">공통</td>
+                                    <td rowspan="3">기타</td>
+                                    <td colspan="2">귀빈실</td>
+
+                                    <td>1회</td>
+                                    <td>100,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td rowspan="2">로비 사용료</td>
+                                    <td>대극장</td>
+                                    <td rowspan="2">1회</td>
+                                    <td>100,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>소극장</td>
+
+                                    <td>50,000</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td rowspan="9">인력 지원</td>
+                                    <td rowspan="9">
+                                      <p>
+                                        추가 3회 공연 기준.추가 1회당 200,000 원
+                                      </p>
+                                      <p>
+                                        * 인력 지원 신청은 공연 한달 전 관장과
+                                        사전 협의
+                                      </p>
+                                      <p>* 설치 및 운영 인력은 대관자 부담</p>
+                                    </td>
+                                    <td rowspan="3">무대 감독</td>
+                                    <td>뮤지컬</td>
+                                    <td>2,000,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>오페라, 무용, 연극, 발레, 대중 음악</td>
+                                    <td>1,500,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>순수 공연</td>
+                                    <td>1,000,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td rowspan="3">음향 디자인</td>
+                                    <td>뮤지컬</td>
+                                    <td>2,000,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>오페라, 무용, 연극, 발레, 대중 음악</td>
+                                    <td>1,500,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>순수 공연</td>
+                                    <td>1,000,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td rowspan="3">조명 디자인</td>
+                                    <td>뮤지컬</td>
+                                    <td>2,000,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>오페라, 무용, 연극, 발레, 대중 음악</td>
+                                    <td>1,500,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>순수 공연</td>
+                                    <td>1,000,000</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+
+                            <ul class="text_area_note">
+                              <li>
+                                1회라 함은 오전, 오후, 야간중 하나를 말하며
+                                냉난방은 4시간을 말한다.
+                              </li>
+                              <li>
+                                별도 운용인력 및 부대설비 사용에 따른 소모품은
+                                대관자가 부담한다.
+                              </li>
+                              <li>
+                                모든 부대시설의 기준 일수는 준비 및 공연 기간을
+                                포함한다.
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="data">
+                      <div class="title_area">
+                        <p>무대자료</p>
+                      </div>
+                      <ul class="text_area">
+                        <li>
+                          <dl>
+                            <dt>무대사용계획서</dt>
+                            <dd>
+                              <a href="javascript:;">
+                                <span>무대사용계획서.zip</span>
+                                <img
+                                  src="../img/sub_rental/icon_download.svg"
+                                  alt=""
+                                />
+                              </a>
+                            </dd>
+                          </dl>
+                        </li>
+                        <li>
+                          <dl>
+                            <dt>조명관련 자료</dt>
+                            <dd>
+                              <a href="javascript:;">
+                                <span>조명관련자료.zip</span>
+                                <img
+                                  src="../img/sub_rental/icon_download.svg"
+                                  alt=""
+                                />
+                              </a>
+                            </dd>
+                          </dl>
+                        </li>
+                        <li>
+                          <dl>
+                            <dt>무대관련 자료</dt>
+                            <dd>
+                              <a href="javascript:;">
+                                <span>무대관련자료.zip</span>
+                                <img
+                                  src="../img/sub_rental/icon_download.svg"
+                                  alt=""
+                                />
+                              </a>
+                            </dd>
+                          </dl>
+                        </li>
+                        <li>
+                          <dl>
+                            <dt>음향관련 자료</dt>
+                            <dd>
+                              <a href="javascript:;">
+                                <span>음향관련자료.zip</span>
+                                <img
+                                  src="../img/sub_rental/icon_download.svg"
+                                  alt=""
+                                />
+                              </a>
+                            </dd>
+                          </dl>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="education">
+                      <div>
+                        <div class="title_area">
+                          <p>온라인 <strong>안전교육</strong></p>
+                        </div>
+                        <ul class="text_area">
+                          <li>
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th>
+                                    안전 총광책임자 및 안전 관리 담당자 안전
+                                    교육
+                                  </th>
+                                  <td class="education_cont">
+                                    <p class="title">
+                                      공연법 제11조의4, 동법 시행령 제9조의4에
+                                      따라 안전총괄책임자 및 안전관리담당자로
+                                      지정되면, 지정된 날로부터 6개월 이내에
+                                      안전교육을 받아야 하며, 안전교육을 받은
+                                      날로부터 2년이 되는 날의 전후 3개월 이내에
+                                      안전교육을 받아야 합니다. 따라서 위 기간에
+                                      집합교육과 온라인교육을 각각 이수하시고,
+                                      이에 해당하는 수료증을 각각 발급받으셔야
+                                      합니다.
+                                    </p>
+                                    <ul>
+                                      <li>
+                                        <span>예1&rpar;</span> 2020년 1월 1일
+                                        안전총괄책임자 및 안전관리담당자로 지정
+                                        → 2020년 7월 1일 이전까지 집합교육 및
+                                        온라인교육 수료 필요
+                                      </li>
+                                      <li>
+                                        <span>예2&rpar;</span> 2020년 1월 1일
+                                        안전교육 수료 → 2022년 1월 1일 전후
+                                        3개월 이내에 집합교육 및 온라인교육 수료
+                                        필요
+                                      </li>
+                                      <li>
+                                        <span>예3&rpar;</span> 2020년 2월 6일
+                                        집합교육 수료, 2020년 4월 1일에
+                                        온라인교육 수료 → 2022년 1월 1일부터
+                                        2022년 7월 1일 사이에 집합교육과
+                                        온라인교육 수료 필요
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th>공연자 안전교육</th>
+                                  <td class="education_cont">
+                                    <p class="title">
+                                      공연법 제11조의4, 동법 시행령 제9조의4에
+                                      따라 공연자는 공연 전 1시간 이상
+                                      안전교육을 받도록 되어있습니다. 본
+                                      교육과정은 55분 해당하며 나머지 5분은
+                                      현장에서 피난경로, 소화기 위치, 비상 시
+                                      현장 대응 요령 등의 현장환경에 따라 달라질
+                                      수 있는 안전수칙을 별도로 교육 받으셔야
+                                      함을 알려드립니다.
+                                    </p>
+                                    <p class="note">
+                                      공연자 안전교육 수료증은 교육을 수료한
+                                      날로부터 2년 동안 유효합니다.
+                                    </p>
+                                    <ul>
+                                      <li>
+                                        <span>예1&rpar;</span> 2020년 1월 1일
+                                        안전총괄책임자 및 안전관리담당자로 지정
+                                        → 2020년 7월 1일 이전까지 집합교육 및
+                                        온라인교육 수료 필요
+                                      </li>
+                                      <li>
+                                        <span>예2&rpar;</span> 2020년 1월 1일
+                                        안전교육 수료 → 2022년 1월 1일 전후
+                                        3개월 이내에 집합교육 및 온라인교육 수료
+                                        필요
+                                      </li>
+                                      <li>
+                                        <span>예3&rpar;</span> 2020년 2월 6일
+                                        집합교육 수료, 2020년 4월 1일에
+                                        온라인교육 수료 → 2022년 1월 1일부터
+                                        2022년 7월 1일 사이에 집합교육과
+                                        온라인교육 수료 필요
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <ul class="text_area_note">
+                              <li>
+                                교육분야(안전총괄책임자 및 안전관리담당자,
+                                공연자)의 2개 과정 중 본인에 해당되는 과정
+                                하나만 이수하면 됩니다.
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            <ul class="text_area_text">
+                              <li>
+                                <span>공연장 안전지원센터 사이버 아카데미</span>
+                                <a href="javascript:;">
+                                  바로가기
+                                  <img
+                                    src="../img/sub_rental/icon_link.svg"
+                                    alt=""
+                                  />
+                                </a>
+                              </li>
+                              <li>
+                                <span>공연장 안전교육 수료방법</span>
+                                <a href="javascript:;">
+                                  바로가기
+                                  <img
+                                    src="../img/sub_rental/icon_link.svg"
+                                    alt=""
+                                  />
+                                </a>
+                              </li>
+                              <li>
+                                <span>근거법</span>
+                                <a href="javascript:;">
+                                  바로가기
+                                  <img
+                                    src="../img/sub_rental/icon_link.svg"
+                                    alt=""
+                                  />
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <div class="title_area">
+                          <p>교육 <strong>대상</strong></p>
+                        </div>
+                        <ul class="text_area">
+                          <li>
+                            <p class="text_area_title">안전총괄책임자 과정</p>
+                            <ul class="text_area_text">
+                              <li>
+                                <span
+                                  >공연장 안전, 넘버원! 안전총괄책임자편</span
+                                >등록된 공연장에서 근무하는 안전총괄책임자
+                              </li>
+                              <li>
+                                <span>공연안전, 넘버원! 안전총괄책임자편</span
+                                >공연장 외의 시설이나 장소에서 공연을 하려는
+                                안전총괄책임자
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <p class="text_area_title">안전관리담당자 과정</p>
+                            <ul class="text_area_text">
+                              <li>
+                                <span
+                                  >공연장 안전, 넘버원! 안전관리담당자편</span
+                                >등록된 공연장에서 근무하는 안전관리담당자
+                              </li>
+                              <li>
+                                <span>공연안전, 넘버원! 안전관리담당자편</span
+                                >공연장 외의 시설이나 장소에서 공연을 하려는
+                                안전관리담당자
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <p class="text_area_title">공연자 과정</p>
+                            <ul class="text_area_text">
+                              <li>
+                                <span
+                                  >공연안전, 넘버원! - 스태프 및 작업자편</span
+                                >스태프 및 작업자
+                              </li>
+                              <li>
+                                <span>공연안전, 넘버원! - 출연자편</span>출연자
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <div class="title_area">
+                          <p>수료증 <strong>발급기준</strong></p>
+                        </div>
+                        <ul class="text_area">
+                          <li>
+                            <ul class="text_area_text">
+                              <li>
+                                <span>학습 수료 조건 달성</span>학습 진도 100%,
+                                시험점수 80점 이상(공연자 과정은 점수와 무관),
+                                설문참여
+                              </li>
+                              <li>
+                                <span>학습 수료</span>수료 조건 달성시 바로
+                                수료, 수료증 발급시 설문 1회 참여
+                              </li>
+                            </ul>
+                            <ul class="text_area_note">
+                              <li>
+                                기타 사항은 고객센터(1644-2941)로 문의하시기
+                                바랍니다.
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <div class="top_info">
+          <div class="inner">
+            <ul>
+              <li class="footer_cont01">
+                <ul class="inner_contA">
+                  <li>
+                    <a href="../#">
+                      <img src="../img/index/header/logo.svg" alt="logo" />
+                      <span class="hidden">logo</span>
+                    </a>
+                  </li>
+                  <li>대구 수성구 무학로 180</li>
+                  <li>
+                    COPYRIGHT&lpar;C&rpar; SUSEONG ARTPIA <br />ALL RIGHTS
+                    RESERVED. BY KOWEB.
+                  </li>
+                </ul>
+              </li>
+              <li class="footer_cont02">
+                <ul class="inner_cont">
+                  <li>
+                    <a href="javascript:;"> 개인정보처리방침 </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"> 이용약관 </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"> 이메일무단수집거부 </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"> 찾아오시는 길 </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer_cont03">
+                <ul class="inner_cont">
+                  <li>
+                    <a href="../performance/plan.html"> 공연안내 </a>
+                  </li>
+                  <li>
+                    <a href="../exhibition/plan.html"> 전시안내 </a>
+                  </li>
+                  <li>
+                    <a href="../academy/class.html"> 예술 아카데미 </a>
+                  </li>
+                  <li>
+                    <a href="../rental/performance.html?tab=procedure">
+                      대관안내
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer_cont04">
+                <ul class="inner_cont">
+                  <li>
+                    <a href="javascript:;"> 로그인 </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"> 회원가입 </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"> 예매하기 </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"> 예매확인 </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer_cont05">
+                <div class="site_select">
+                  <div class="family_site">
+                    <span>FAMILY SITE</span>
+                  </div>
+                  <ul>
+                    <li><a href="javascript:;">수성구청</a></li>
+                    <li><a href="javascript:;">수성문화재단</a></li>
+                    <li><a href="javascript:;">범어도서관</a></li>
+                    <li><a href="javascript:;">용학도서관</a></li>
+                    <li><a href="javascript:;">고산도서관</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bot_info">
+          <div class="inner">
+            <ul>
+              <li>사업자번호. 502-82-20323</li>
+              <li>전화번호. 053-668-1800</li>
+              <li>팩스. 053-666-3259</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/rental_performance.js"></script>
+  </body>
+</html>

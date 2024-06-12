@@ -1,0 +1,1829 @@
+@charset "utf-8";
+
+/* sub_tab */
+.sub_tab {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 96rem;
+}
+
+.sub_tab > li {
+  width: 167rem;
+  height: 58rem;
+}
+
+.sub_tab > li + li {
+  margin-left: 6rem;
+}
+
+.sub_tab > li > a {
+  width: 100%;
+  height: 100%;
+  font-size: 16rem;
+  line-height: 56rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.sub_tab > li:hover > a {
+  font-weight: 500;
+  color: #fff;
+  background: #1f2839;
+  border: 1px solid #1f2839;
+  box-shadow: 6px 10px 29px 0px rgba(27, 34, 45, 0.38);
+}
+
+.sub_tab > li.on > a {
+  font-weight: 500;
+  color: #fff;
+  background: #1f2839;
+  border: 1px solid #1f2839;
+  box-shadow: 6px 10px 29px 0px rgba(27, 34, 45, 0.38);
+}
+
+/* cont_search_area 공통 */
+
+.cont_search_area {
+  padding: 50rem 0;
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+  margin-bottom: 80rem;
+}
+
+.cont_search_area .cont_inner {
+  padding: 0 20rem;
+}
+
+.cont_search_area .search_title {
+  font-size: 28rem;
+  font-weight: 300;
+  color: #222;
+  margin-bottom: 44rem;
+}
+
+.cont_search_area .search_title > span {
+  font-weight: 600;
+}
+
+.cont_search_area .sub_tab_search > ul {
+  display: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: -20rem;
+  margin-left: -20rem;
+  box-sizing: border-box;
+}
+
+.cont_search_area .sub_tab_search > ul.on {
+  display: flex;
+}
+
+.cont_search_area .sub_tab_search > ul > li {
+  width: calc(100% / 3);
+  margin-bottom: 23rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  box-sizing: border-box;
+}
+
+.cont_search_area .sub_tab_search > ul > li > p {
+  font-size: 16rem;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 8rem;
+}
+
+.cont_search_area .date_select {
+  display: flex;
+}
+
+.date_select > li {
+  width: 100%;
+  height: 50rem;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  display: flex;
+  position: relative;
+}
+
+.date_select > li:nth-child(2) {
+  width: 80rem;
+  font-size: 35rem;
+  line-height: 52rem;
+  text-align: center;
+  background: transparent;
+  border: none;
+  display: block;
+}
+
+.date_select > li > .date_details {
+  width: calc(100% - 44rem);
+  height: 50rem;
+  padding: 7rem 8rem;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-right: 1px solid #ddd;
+  opacity: 0.5;
+}
+
+.date_select > li > button {
+  width: 44rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.date_select > li > button > span {
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  background: url(../img/sub_public/icon_calendar.svg) no-repeat center/ cover;
+}
+
+.cont_search_area .type_select {
+  display: flex;
+}
+
+.type_select > li {
+  width: calc(100% / 4);
+  height: 50rem;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.type_select > li > label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.type_select > li > label > input {
+  appearance: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 20rem;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.type_select > li + li > label > input {
+  border-left: 0;
+}
+
+.type_select > li > label > input:checked {
+  border-color: #caae87;
+  border-left: 1px solid #caae87;
+}
+
+.type_select > li > label > span {
+  position: relative;
+  font-size: 14rem;
+  font-weight: 300;
+  padding-left: 24rem;
+  box-sizing: border-box;
+}
+
+.type_select > li > label > span::before {
+  content: "";
+  width: 10rem;
+  height: 6rem;
+  position: absolute;
+  left: -2rem;
+  top: 4rem;
+  border-left: 3rem solid #eee;
+  border-bottom: 3rem solid #eee;
+  transform: rotate(-45deg);
+}
+
+.type_select > li > label > input:checked + span::before {
+  border-color: #caae87;
+}
+
+.cont_search_area .search_select {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #0e0e0e;
+}
+
+.search_select > input {
+  width: 100%;
+  height: 100%;
+  font-size: 15rem;
+  border: none;
+  background: transparent;
+  padding: 7rem 8rem;
+  margin: 2rem 0rem;
+  box-sizing: border-box;
+  opacity: 0.5;
+}
+
+.search_select > input:focus {
+  outline: none;
+  border: 1px solid #caae87;
+}
+
+.search_select > button {
+  width: 150rem;
+  height: 100%;
+  font-size: 16rem;
+  color: #fff;
+  background-color: #0e0e0e;
+  padding: 0 20rem 0 30rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search_select > button > .icon_search {
+  width: 14rem;
+  height: 14rem;
+  position: absolute;
+  right: 25rem;
+  background: url(../img/sub_public/icon_search_w.svg) no-repeat center/cover;
+}
+
+/* cont_search_area .sub_tab_searchA */
+/* cont_search_area .sub_tab_searchA 제이쿼리 datepicker css변경*/
+.ui-datepicker {
+  width: auto !important;
+  font-size: 14rem;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  padding: 0px;
+  background: #fff;
+  border: 0px;
+  border-bottom: 1px dashed #cfcece;
+}
+
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+  height: 30px;
+  margin: 1px 2px;
+  font-size: 14px;
+  padding-right: 30rem;
+  background: url(../img/sub_public/icon_select_arrow.svg) no-repeat
+    calc(100% - 10rem) 50%;
+  background-size: 7rem 7rem;
+  appearance: none;
+}
+
+.ui-widget-header .ui-icon {
+  background-image: url(../img/sub_public/icon_ui.png);
+}
+
+.ui-datepicker table {
+  width: 100%;
+  font-size: 0.9em;
+  border-collapse: collapse;
+  margin: 0 0 0.4em;
+}
+
+.ui-datepicker th {
+  padding: 0.7em 0.3em;
+  text-align: center;
+  font-weight: normal;
+  border: 0;
+}
+
+.ui-state-default {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #454545;
+  background: transparent !important;
+  border: 0 !important;
+  text-align: center !important;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  background: #f3d5a9 !important;
+  border-radius: 100%;
+  color: #333 !important;
+}
+
+.ui-datepicker thead tr > th.ui-datepicker-week-end:first-child {
+  color: #e91062;
+}
+
+.ui-datepicker thead tr > th.ui-datepicker-week-end:last-child {
+  color: #2d7aee;
+}
+
+.ui-datepicker tbody tr > td.ui-datepicker-week-end:first-child a {
+  color: #e91062;
+}
+
+.ui-datepicker tbody tr > td.ui-datepicker-week-end:last-child a {
+  color: #2d7aee;
+}
+
+.cont_search_area .location_select {
+  appearance: none;
+  width: 100%;
+  height: 50rem;
+  font-size: 14rem;
+  font-weight: 300;
+  color: #666;
+  padding: 10rem 20rem;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  border-color: #eee;
+  background: #fff url(../img/sub_public/icon_select_arrow.svg) no-repeat
+    calc(100% - 20rem) 50%;
+}
+
+/* cont_search_area .sub_tab_searchB */
+
+.cont_search_area .sub_tab_searchB > li:nth-child(1) {
+  width: 21%;
+}
+
+.cont_search_area .sub_tab_searchB > li:nth-child(2) {
+  width: 32%;
+}
+
+.cont_search_area .sub_tab_searchB > li:nth-child(3) {
+  width: 37%;
+}
+
+.sub_tab_searchB .date_select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub_tab_searchB .date_select > button {
+  width: 50rem;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.sub_tab_searchB .date_select > button > span {
+  width: 11rem;
+  height: 17rem;
+  background: url(../img/sub_public/icon_move.svg) no-repeat center/cover;
+}
+
+.sub_tab_searchB .date_select > button:last-child > span {
+  transform: rotate(180deg);
+}
+
+.sub_tab_searchB .date_select > #dateBox {
+  font-size: 23rem;
+  font-weight: 500;
+  color: #222;
+  margin: 4rem 28rem 0;
+}
+
+.sub_tab_searchB .search_select {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #0e0e0e;
+}
+
+.sub_tab_searchB .search_select > input {
+  width: 100%;
+  height: 100%;
+  font-size: 15rem;
+  border: none;
+  background: transparent;
+  padding: 7rem 8rem;
+  margin: 2rem 0rem;
+  box-sizing: border-box;
+  opacity: 0.5;
+}
+
+/* cont_result_area */
+/* cont_result_area  sub_tab_resultA  calender_area */
+
+.calender_area {
+  padding-bottom: 150rem;
+}
+
+.calender_area .calendar_header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.calendar_header > .btn {
+  position: relative;
+  height: 48rem;
+  line-height: 48rem;
+  box-sizing: border-box;
+  padding: 0 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.calendar_header > .btn > span {
+  display: block;
+  width: 11rem;
+  height: 17rem;
+  background: url(../img/sub_public/icon_move.svg) no-repeat center/cover;
+}
+
+.calendar_header > .btn:last-child > span {
+  transform: rotate(180deg);
+}
+
+.calendar_header > .month_year {
+  font-size: 16rem;
+  color: #0e0e0e;
+  padding: 0 20rem;
+}
+
+.calendar_header > .month_year > span {
+  font-size: 30rem;
+  margin-left: 8rem;
+}
+
+#calendar_table {
+  margin-bottom: 18rem;
+}
+
+#calendar_table > table {
+  width: 100%;
+}
+#calendar_table > ul {
+  display: none;
+}
+#calendar_table > table > tr > th {
+  font-weight: 400;
+  color: #444;
+  text-align: left;
+  padding: 10rem 10rem 0;
+  box-sizing: border-box;
+}
+
+#calendar_table > table > tr > th:first-child,
+#calendar_table > table > tr > th:last-child {
+  color: #caae87;
+}
+
+#calendar_table > table > tr > th:first-child > p,
+#calendar_table > table > tr > th:last-child > p {
+  border-color: #caae87;
+}
+
+#calendar_table > table > tr > th > p {
+  font-size: 16rem;
+  padding: 10rem 4rem 4rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #0e0e0e;
+}
+
+#calendar_table > table > tr > td {
+  width: calc(100% / 7);
+  height: 155rem;
+  border: 1px solid #e0e6e9;
+  padding: 28rem 10rem 16rem;
+  vertical-align: top;
+  position: relative;
+  transition: all 0.4s ease-out 0s;
+  box-sizing: border-box;
+}
+
+#calendar_table > table > tr > td.today::after {
+  content: "TODAY";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 27rem;
+  line-height: 29rem;
+  font-size: 10px;
+  color: #fff;
+  padding: 0rem 12rem;
+  box-sizing: border-box;
+  background: #caae87;
+}
+
+#calendar_table > table > tr > td > span {
+  position: absolute;
+  top: 20rem;
+  font-size: 16rem;
+  line-height: 0;
+}
+
+#calendar_table .cal_cont > a {
+  position: relative;
+}
+
+#calendar_table .cal_cont > a::before {
+  content: "";
+  position: absolute;
+  width: 14rem;
+  height: 14rem;
+  line-height: 14rem;
+  font-size: 10rem;
+  font-weight: bold;
+  font-family: Pretendard, "맑은 고딕", "돋움", Dotum, "굴림", Gulim, Sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #000;
+  border-radius: 50%;
+}
+
+#calendar_table .cal_cont > a > .text_area {
+  margin-top: 14rem;
+  padding-left: 20rem;
+}
+
+#calendar_table .cal_cont > a > .text_area > * {
+  font-size: 13rem;
+  font-weight: 300;
+  line-height: 1.3em;
+  word-break: keep-all;
+}
+
+#calendar_table .cal_cont > a > .text_area .content {
+  font-weight: 500;
+}
+
+#calendar_table .cal_cont > a.performance_g:before {
+  content: "G";
+  background: #f19c5a;
+}
+
+#calendar_table .cal_cont > a.performance_r:before {
+  content: "R";
+  background: #2a7db9;
+}
+
+#calendar_table .cal_cont > a.performance_l:before {
+  content: "L";
+  background: #b9a96d;
+}
+
+#calendar_table .cal_cont > a.performance_a:before {
+  content: "A";
+  background: #40a45c;
+}
+
+#calendar_table .cal_cont > a.performance_s:before {
+  content: "S";
+  background: #937de9;
+}
+
+#calendar_table .cal_cont > a.performance_m:before {
+  content: "M";
+  background: #62676e;
+}
+
+#calendar_table .cal_cont > a.performance_e:before {
+  content: "E";
+  background: #facb13;
+}
+
+#calendar_table .cal_cont > a.exhibition_1:before {
+  content: "1";
+  background: #f19c5a;
+}
+
+#calendar_table .cal_cont > a.exhibition_2:before {
+  content: "2";
+  background: #2a7db9;
+}
+
+#calendar_table .cal_cont > a.exhibition_a:before {
+  content: "A";
+  background: #62676e;
+}
+
+#calendar_table > ul > li > * {
+  font-size: 16rem;
+}
+#calendar_table > ul {
+  border-bottom: 1px solid #eee;
+}
+#calendar_table > ul > li {
+  display: flex;
+  align-items: flex-start;
+  padding: 16rem 0;
+  box-sizing: border-box;
+}
+#calendar_table > ul > li:first-child {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+#calendar_table > ul > li + li {
+  border-top: 1px solid #eee;
+}
+
+#calendar_table > ul > li > .date_B {
+  width: 110rem;
+  border-right: 1px solid #eee;
+  line-height: 1.7;
+  text-align: right;
+  padding-right: 30rem;
+  box-sizing: border-box;
+}
+
+#calendar_table > ul > li > .date_B > p:nth-child(1) {
+  display: block;
+  font-size: 17rem;
+  font-weight: 400;
+  color: #222;
+}
+
+#calendar_table > ul > li > .date_B_cont_today > p:nth-child(1) {
+  font-size: 16rem;
+  font-weight: 500;
+}
+#calendar_table > ul > li > .date_B_cont_today > p:nth-child(2) {
+  opacity: 0;
+}
+
+#calendar_table > ul > li > .date_B > p:nth-child(2) {
+  font-size: 19rem;
+  font-weight: 300;
+  font-family: "Ibarra Real Nova", Sans-serif;
+  color: #caae87;
+  position: relative;
+  top: -9rem;
+}
+
+#calendar_table > ul > li > .date_B_cont {
+  width: calc(100% - 130rem);
+  padding-left: 30rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#calendar_table > ul .cal_cont + .cal_cont {
+  margin-top: 8rem;
+}
+#calendar_table > ul .cal_cont > a::before {
+  width: 20rem;
+  height: 20rem;
+  line-height: 21rem;
+  left: -3rem;
+  top: 2rem;
+}
+
+#calendar_table > ul .cal_cont > a > .text_area {
+  margin-top: 0;
+  padding-left: 20rem;
+}
+#calendar_table > ul .cal_cont > a > .text_area > p {
+  font-size: 14rem;
+  font-family: "맑은 고딕", Pretendard;
+  line-height: 1.7;
+  vertical-align: top;
+  display: inline-block;
+}
+#calendar_table > ul .cal_cont > a > .text_area > span {
+  font-size: 16rem;
+  font-family: "맑은 고딕", Pretendard;
+  line-height: 1.7;
+  padding-left: 13rem;
+}
+#calendar_table > ul .cal_cont > a > .text_area {
+}
+
+.calender_area .calendar_typeList {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.calendar_typeList > li {
+  text-align: right;
+  margin-right: 15rem;
+}
+
+.calendar_typeList > li:last-child {
+  margin-right: 0;
+}
+
+.calendar_typeList > li > span {
+  font-size: 15rem;
+  font-weight: 300;
+  color: #555;
+  margin-right: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 29rem;
+  position: relative;
+}
+
+.calendar_typeList > li > span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 20rem;
+  line-height: 20rem;
+  font-size: 10rem;
+  font-weight: bold;
+  font-family: Pretendard, "맑은 고딕", "돋움", Dotum, "굴림", Gulim, Sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #000;
+  border-radius: 50%;
+}
+
+.calendar_typeList > li.performance_g > span::before {
+  content: "G";
+  background: #f19c5a;
+}
+
+.calendar_typeList > li.performance_g > span::before {
+  content: "G";
+  background: #f19c5a;
+}
+
+.calendar_typeList > li.performance_r > span::before {
+  content: "R";
+  background: #2a7db9;
+}
+
+.calendar_typeList > li.performance_l > span::before {
+  content: "L";
+  background: #b9a96d;
+}
+
+.calendar_typeList > li.performance_a > span::before {
+  content: "A";
+  background: #40a45c;
+}
+
+.calendar_typeList > li.performance_s > span::before {
+  content: "S";
+  background: #937de9;
+}
+
+.calendar_typeList > li.performance_m > span::before {
+  content: "M";
+  background: #62676e;
+}
+
+.calendar_typeList > li.performance_e > span::before {
+  content: "E";
+  background: #facb13;
+}
+
+.calendar_typeList > li.exhibition_1 > span::before {
+  content: "1";
+  background: #f19c5a;
+}
+
+.calendar_typeList > li.exhibition_2 > span::before {
+  content: "2";
+  background: #2a7db9;
+}
+
+.calendar_typeList > li.exhibition_a > span::before {
+  content: "A";
+  background: #62676e;
+}
+
+/* cont_result_area  sub_tab_resultA  resultA_area */
+
+.resultA_area {
+  display: none;
+  padding-bottom: 150rem;
+}
+
+.resultA_cont > p:nth-child(1) {
+  font-size: 28rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 34rem;
+}
+
+.resultA_cont .result_name_top {
+  font-weight: 300;
+}
+
+.resultA_cont > p:nth-child(2) {
+  font-size: 16rem;
+  font-weight: 300;
+  color: #666;
+}
+
+.resultA_cont .result_num {
+  color: #0e0e0e;
+  font-weight: 700;
+}
+
+.contents_area_resultA {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-bottom: 60rem;
+}
+
+.contents_area_resultA > li {
+  width: calc(50% - 20rem);
+  margin: 38rem 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.contents_area_resultA > li:nth-child(2n) {
+  margin-left: 40rem;
+}
+
+.contents_area_resultA > li > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.contents_area_resultA .img_area {
+  width: 220rem;
+  padding-bottom: 50.555%;
+  position: relative;
+  background: #f1f1f1 url(../img/index/section01/item_bg_logo.png) no-repeat
+    center / 121rem;
+  overflow: hidden;
+}
+
+.contents_area_resultA .img_area > .imgCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(27, 34, 45, 0.38);
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.contents_area_resultA > li:hover .img_area > .imgCover {
+  opacity: 1;
+}
+
+.contents_area_resultA .img_area > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+}
+
+.contents_area_resultA .text_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% - 260rem);
+  padding-top: 20rem;
+  margin-left: 40rem;
+  border-top: 1px solid #0e0e0e;
+}
+
+.contents_area_resultA .text_area .title {
+  font-size: 20rem;
+  font-weight: 500;
+  color: #222;
+  line-height: 29rem;
+  margin-bottom: 18rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.contents_area_resultA .text_area > dl {
+  display: none;
+}
+
+.contents_area_resultA .text_area > dl + dl {
+  margin-top: 4rem;
+}
+
+.contents_area_resultA .text_area > dl > dt {
+  font-size: 15rem;
+  font-weight: 500;
+  color: #444;
+  width: 80rem;
+  padding: 2rem 0;
+}
+
+.contents_area_resultA .text_area > dl > dd {
+  font-size: 15rem;
+  font-weight: 300;
+  font-family: Pretendard, "맑은 고딕", "돋움", Dotum, "굴림", Gulim, Sans-serif;
+  color: #666;
+  line-height: 1.5;
+  padding: 2rem 0;
+}
+
+.contents_area_resultA .text_area .reservation {
+  font-size: 15rem;
+  color: #caae87;
+  text-align: right;
+}
+
+.contents_area_resultA .view_more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38rem;
+  height: 38rem;
+  transition: all 0.7s cubic-bezier(0.25, 0.47, 0.12, 0.99);
+  z-index: 5;
+}
+
+.contents_area_resultA .view_more:hover {
+  transform: rotate(180deg) translate(50%, 50%);
+}
+
+.contents_area_resultA .view_more > span {
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contents_area_resultA .view_more .width_line {
+  width: 100%;
+  height: 1rem;
+}
+
+.contents_area_resultA .view_more .height_line {
+  width: 1rem;
+  height: 100%;
+}
+
+/* cont_result_area */
+
+.cont_result_area > div {
+  display: none;
+}
+
+.cont_result_area > div.on {
+  display: block;
+}
+
+/* cont_result_area  resultA_area  Pagination Style */
+
+/* Pagination Style */
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination > li.paginationNum {
+  margin: 0 2px;
+}
+
+.pagination > li.active > a {
+  font-weight: 600;
+  color: #222;
+}
+
+.pagination > li > a {
+  display: block;
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
+  font-size: 16px;
+  font-family: "Ibarra Real Nova", Pretendard;
+  color: #939393;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+
+.pagination > li > a:hover {
+  color: #caae87;
+}
+
+.pagination #first,
+.pagination #prev,
+.pagination #next,
+.pagination #last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.pagination .paginationBox_first + li {
+  margin-left: 12px;
+}
+
+.pagination .paginationBox_prev + li {
+  margin-left: 9px;
+}
+
+.pagination .paginationBox_first + .paginationBox_prev {
+  margin-left: 0;
+}
+
+.pagination li + .paginationBox_next {
+  margin-left: 9px;
+}
+
+.pagination li + .paginationBox_last {
+  margin-left: 9px;
+}
+
+.pagination li + .paginationBox_next + .paginationBox_last {
+  margin-left: 0;
+}
+
+.pagination #first > span,
+.pagination #prev > span,
+.pagination #next > span,
+.pagination #last > span {
+  display: block;
+  background: no-repeat center/cover;
+  opacity: 0.4;
+}
+
+.pagination #first > span,
+.pagination #last > span {
+  width: 9px;
+  height: 9px;
+  background-image: url(../img/sub_public/icon_btn_pager_end.svg);
+}
+
+.pagination #prev > span,
+.pagination #next > span {
+  width: 6px;
+  height: 9px;
+  background-image: url(../img/sub_public/icon_btn_pager.svg);
+}
+
+.pagination #first > span,
+.pagination #prev > span {
+  transform: rotate(180deg);
+}
+
+/* cont_result_area sub_tab_resultB resultB_area */
+.resultB_area {
+  border-top: 1px solid #0e0e0e;
+  padding-bottom: 150rem;
+}
+
+.resultB_area > li {
+  min-height: 150rem;
+  padding: 40rem 0;
+  box-sizing: border-box;
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  position: relative;
+}
+
+.resultB_area .month_area {
+  width: 150rem;
+  border-right: 1px solid #eee;
+  position: relative;
+}
+
+.resultB_area .month_area > p {
+  position: absolute;
+  right: 40rem;
+  font-size: 28rem;
+  font-weight: 400;
+  color: #222;
+  text-align: right;
+}
+
+.resultB_area .month_area > p > span {
+  display: block;
+  font-size: 14rem;
+  color: #caae87;
+  position: relative;
+  top: -7rem;
+}
+
+.resultB_area .date_area {
+  width: calc(100% - 150rem);
+  padding-left: 60rem;
+  box-sizing: border-box;
+}
+
+.resultB_area .date_area > li {
+  display: flex;
+}
+
+.resultB_area .date_area > li + li {
+  margin-top: 20rem;
+}
+
+.resultB_area .date_area > li > .resultB_date {
+  width: 80rem;
+  font-size: 16rem;
+  font-weight: 500;
+  color: #aeaeae;
+  margin-right: 12rem;
+  margin-top: 3rem;
+}
+
+.resultB_area .date_area > li > .resultB_title {
+  display: block;
+  width: 100%;
+  font-size: 16rem;
+  font-weight: 300;
+  font-family: Pretendard, "맑은 고딕", "돋움", Dotum, "굴림", Gulim, Sans-serif;
+  color: #444;
+  line-height: 1.7;
+  word-break: keep-all;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.resultB_area .date_area > li > .resultB_title > .resultB_type {
+  padding-left: 13rem;
+  margin-right: 16rem;
+  font-size: 14rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.resultB_area .date_area > li > .resultB_title > .resultB_type::before {
+  content: "";
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10rem;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.resultB_area .date_area > li > .resultB_title > .resultB_type.plan {
+  color: #2a7db9;
+}
+
+.resultB_area .date_area > li > .resultB_title > .resultB_type.rental {
+  color: #40a45c;
+}
+
+.resultB_area .date_area > li > .resultB_title > .resultB_type.support {
+  color: #f19c5a;
+}
+
+/* 
+
+
+
+
+캘린더 모바일버전 540 반응형만들어야함
+
+-----------
+
+페이지네이션 html,css,js가져오고 다시확인해보기
+------------
+
+
+캘린더 밑부분 크기 반응형 다시확인하기
+---------------
+
+
+*/
+
+/* 반응형 */
+@media (max-width: 1919px) {
+}
+
+@media (max-width: 1480px) {
+  /* main title 공용 */
+  .result {
+    padding-bottom: 100rem;
+  }
+
+  /* //main title 공용 */
+}
+
+@media (max-width: 1023px) {
+  main .inner {
+    margin: 0 40rem;
+  }
+
+  .cont_search_area {
+    padding: 48rem 0;
+  }
+
+  .cont_search_area .sub_tab_search > ul {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .cont_search_area > .cont_inner > .sub_tab_search > ul > li {
+    width: calc(100% / 2 - 4rem);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sub_tab_searchB .date_select {
+    justify-content: flex-start;
+  }
+
+  .calender_area {
+    padding-bottom: 100rem;
+  }
+
+  .contents_area_resultA > li {
+    width: 100%;
+    margin: 20rem 0;
+  }
+
+  .contents_area_resultA .img_area {
+    width: 208rem;
+    padding-bottom: 31%;
+    height: auto;
+  }
+
+  .contents_area_resultA > li:nth-child(2n) {
+    margin-left: 0;
+  }
+
+  .resultA_area {
+    padding-bottom: 100rem;
+  }
+
+  .contents_area_resultA .img_area > .imgCover {
+    display: none;
+  }
+
+  .resultB_area {
+    padding-bottom: 100rem;
+  }
+}
+
+/* @media (min-width:961px){
+    .{display: none;}모바일
+
+   } */
+
+@media (max-width: 960px) {
+  #calendar_table > table {
+    display: none !important;
+  }
+  #calendar_table > ul {
+    display: block;
+  }
+  #calendar_table > ul .cal_cont > a > .text_area {
+    display: flex;
+  }
+}
+
+@media (max-width: 860px) {
+  /* main title 공용 */
+  .ko_title {
+    font-family: "맑은 고딕", Pretendard;
+  }
+
+  /* //main title 공용 */
+
+  /* 서브탭 공용 */
+  .sub_tab > li > a {
+    font-family: "맑은 고딕", Pretendard;
+  }
+
+  /* //서브탭 공용 */
+
+  .cont_search_area .search_title,
+  .cont_search_area .sub_tab_search > ul > li > p,
+  .type_select > li > label > span {
+    font-family: "맑은 고딕", Pretendard;
+  }
+
+  .cont_search_area > .cont_inner > .sub_tab_search > ul > li {
+    width: calc(100%);
+  }
+
+  .resultA_cont > p:nth-child(1),
+  .resultA_cont .result_name_top,
+  .resultA_cont > p:nth-child(2),
+  .contents_area_resultA .text_area .reservation {
+    font-family: "맑은 고딕", Pretendard;
+  }
+
+  .contents_area_resultA .text_area {
+    justify-content: start;
+    position: relative;
+  }
+
+  .contents_area_resultA .text_area .reservation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .resultA_cont .result_num {
+    font-family: "Ibarra Real Nova", Pretendard;
+  }
+
+  .contents_area_resultA .img_area {
+    width: 206rem;
+    padding-bottom: 42%;
+  }
+
+  .cont_search_area {
+    margin-bottom: 80rem;
+  }
+
+  .contents_area_resultA {
+    padding-bottom: 30rem;
+  }
+
+  .resultA_area {
+    padding-bottom: 55rem;
+  }
+
+  .resultB_area .month_area {
+    width: 130rem;
+  }
+
+  .resultB_area .date_area {
+    padding-left: 40rem;
+  }
+
+  .contents_area_resultA .text_area > dl {
+    display: block;
+  }
+
+  .calendar_typeList > li > span {
+    font-family: "맑은 고딕", Pretendard;
+  }
+}
+
+@media (max-width: 540px) {
+  /* main title 공용 */
+
+  main .title_text {
+    padding: 40rem 0 28rem;
+  }
+
+  main .title_text .en_title {
+    font-size: 11rem;
+    margin-bottom: 5rem;
+  }
+
+  main .title_text .ko_title {
+    font-size: 21rem;
+  }
+
+  .result {
+    padding-bottom: 55rem;
+  }
+
+  /* //main title 공용 */
+
+  /* 서브탭 공용 */
+  .sub_tab {
+    margin-bottom: 40rem;
+  }
+
+  .sub_tab > li {
+    width: auto;
+    height: auto;
+  }
+
+  .sub_tab > li > a {
+    height: 35rem;
+    line-height: 35rem;
+    font-size: 14rem;
+    padding: 0 8rem;
+    border: none;
+    border-radius: 80rem;
+    transition: none;
+  }
+
+  .sub_tab > li:hover > a {
+    font-weight: 400;
+    color: #444;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .sub_tab > li.on > a {
+    padding: 0 18rem;
+    box-shadow: none;
+  }
+
+  .sub_tab > li.on:hover > a {
+    font-weight: 500;
+    color: #fff;
+    background: #1f2839;
+    border: 1px solid #1f2839;
+  }
+
+  /* //서브탭 공용 */
+
+  main .inner {
+    margin: 0;
+  }
+
+  .cont_search_area {
+    padding: 28rem 0;
+  }
+
+  .cont_search_area .search_title {
+    display: none;
+  }
+
+  .cont_search_area .sub_tab_search > ul > li > p {
+    font-size: 14rem;
+    margin-bottom: 7rem;
+  }
+
+  .date_select > li {
+    height: 40rem;
+  }
+
+  .date_select > li > .date_details {
+    width: calc(100% - 34rem);
+    height: 40rem;
+  }
+
+  .date_select > li > button {
+    width: 34rem;
+  }
+
+  .date_select > li > button > span {
+    width: 15rem;
+    height: 14rem;
+    background-size: auto;
+  }
+
+  .date_select > li:nth-child(2) {
+    font-size: 22rem;
+    line-height: 39rem;
+    width: 60rem;
+  }
+
+  .type_select > li > label > span::before {
+    display: none;
+  }
+
+  .cont_search_area .type_select {
+    gap: 4rem;
+  }
+
+  .type_select > li {
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .type_select > li > label > input {
+    padding: 0;
+  }
+
+  .type_select > li > label > span {
+    font-size: 13rem;
+    font-weight: 400;
+    color: #bfbfbf;
+    line-height: normal;
+    padding: 8rem 12rem;
+  }
+
+  .type_select > li > label > input:checked + span {
+    color: #caae87;
+  }
+
+  .type_select > li + li > label > input {
+    border-left: 1px solid #ddd;
+  }
+
+  .cont_search_area .location_select {
+    height: 42rem;
+    line-height: 42rem;
+    padding: 0 15rem;
+  }
+
+  .search_select > button {
+    width: 50rem;
+    height: 36rem;
+    font-size: 15rem;
+  }
+
+  .search_select > button > span:first-child {
+    display: none;
+  }
+
+  .cont_search_area .search_select {
+    height: 36rem;
+  }
+
+  .search_select > button > .icon_search {
+    right: 50%;
+    transform: translateX(50%);
+    background: url(../img/sub_public/icon_search.svg) no-repeat center / cover;
+  }
+
+  .search_select > button {
+    background-color: transparent;
+  }
+
+  .cont_search_area .sub_tab_search > ul > li {
+    margin-bottom: 19rem;
+  }
+
+  .contents_area_resultA .img_area {
+    width: 206rem;
+    padding-bottom: 42%;
+  }
+
+  .cont_search_area {
+    margin-bottom: 60rem;
+  }
+
+  .cont_result_area > div > .cont_inner {
+    margin: 0 20rem;
+  }
+
+  .resultA_cont > p:nth-child(1) {
+    font-size: 20rem;
+    margin-bottom: 14rem;
+  }
+
+  .resultA_cont > p:nth-child(2) {
+    font-size: 13rem;
+  }
+
+  .contents_area_resultA .img_area {
+    width: 100rem;
+    padding-bottom: 62.5%;
+    background-size: 70rem;
+  }
+
+  .contents_area_resultA .text_area {
+    width: calc(100% - 120rem);
+    margin-left: 20rem;
+    padding-top: 14rem;
+  }
+
+  .contents_area_resultA .text_area .title {
+    font-size: 16rem;
+    line-height: 1.25;
+    margin-bottom: 6rem;
+  }
+
+  .resultB_area > li {
+    padding: 24rem 0;
+  }
+
+  .resultB_area .month_area {
+    border-right: 0;
+    margin-bottom: 32rem;
+  }
+
+  .resultB_area .month_area > p {
+    font-size: 13rem;
+    position: relative;
+    text-align: left;
+    right: 0;
+  }
+
+  .resultB_area .month_area > p > span {
+    font-size: 17rem;
+  }
+
+  .resultB_area .date_area {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .resultB_area .date_area > li > .resultB_date {
+    font-size: 13rem;
+    width: 120rem;
+    margin-right: 0;
+    margin-top: 1.5rem;
+    line-height: 1.7;
+  }
+
+  .resultB_area .date_area > li > .resultB_title {
+    font-size: 13rem;
+    line-height: 1.7;
+  }
+
+  .resultB_area .date_area > li > .resultB_title > .resultB_type {
+    font-size: 12rem;
+    display: inline-block;
+    margin-right: 6rem;
+    padding: 2rem 8rem 0;
+    border-radius: 40rem;
+  }
+
+  .resultB_area .date_area > li > .resultB_title > .resultB_type::before {
+    display: none;
+  }
+
+  .resultB_area .date_area > li + li {
+    margin-top: 12rem;
+  }
+
+  .resultB_area .date_area > li > .resultB_title > .resultB_type.plan {
+    color: #fff;
+    background: #2a7db9;
+  }
+
+  .resultB_area .date_area > li > .resultB_title > .resultB_type.rental {
+    color: #fff;
+    background: #40a45c;
+  }
+
+  .resultB_area .date_area > li > .resultB_title > .resultB_type.support {
+    color: #fff;
+    background: #f19c5a;
+  }
+
+  .resultB_area {
+    padding-bottom: 55rem;
+  }
+
+  .contents_area_resultA .text_area > dl {
+    display: flex;
+  }
+
+  .contents_area_resultA .text_area > dl > dt {
+    font-size: 14rem;
+    width: 68rem;
+  }
+
+  .contents_area_resultA .text_area > dl > dd {
+    width: calc(100% - 68rem);
+    font-size: 14rem;
+    word-break: keep-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .calendar_header > .month_year {
+    font-size: 13rem;
+  }
+
+  .calendar_header > .month_year > span {
+    font-size: 24rem;
+  }
+
+  .calendar_header > .btn {
+    height: 48px;
+    line-height: 48px;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  .calendar_header > .btn > span {
+    width: 11px;
+    height: 17px;
+  }
+  #calendar_table > ul > li {
+    padding: 24rem 0;
+  }
+  #calendar_table > ul > li > .date_B {
+    text-align: left;
+    font-size: 13rem;
+    width: 90rem;
+    border-right: none;
+  }
+  #calendar_table > ul > li > .date_B_cont_today > p:nth-child(1) {
+    font-size: 17rem;
+    color: #caae87;
+  }
+  #calendar_table > ul > li > .date_B > p:nth-child(1) {
+    font-size: 18rem;
+  }
+  #calendar_table > ul > li > .date_B > p:nth-child(2) {
+    font-size: 13rem;
+    color: #aaa;
+  }
+
+  #calendar_table > ul > li > .date_B_cont {
+    width: calc(100% - 90rem);
+    padding-left: 0;
+  }
+  #calendar_table > ul .cal_cont > a > .text_area > span {
+    font-size: 13rem;
+    padding-left: 6rem;
+  }
+
+  #calendar_table > ul .cal_cont > a::before {
+    left: 0;
+    top: 3rem;
+    width: 16rem;
+    height: 16rem;
+    line-height: 17rem;
+    font-size: 8rem;
+  }
+
+  .calender_area .calendar_typeList {
+    flex-wrap: wrap;
+    gap: 8rem;
+  }
+
+  .calendar_typeList > li {
+    margin-right: 0;
+  }
+
+  .calendar_typeList > li > span {
+    font-size: 13rem;
+    margin-right: 0;
+    padding-left: 20rem;
+  }
+  .calendar_typeList > li > span::before {
+    width: 16rem;
+    height: 16rem;
+    line-height: 17rem;
+    font-size: 8rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .calender_area {
+    padding-bottom: 55rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* pagination */
+  .pagination #first > span,
+  .pagination #last > span {
+    width: 8px;
+    height: 8px;
+  }
+
+  .pagination #prev > span,
+  .pagination #next > span {
+    width: 5px;
+    height: 8px;
+  }
+
+  .pagination > li > a {
+    width: 29px;
+    height: 29px;
+    font-size: 14px;
+    line-height: 29px;
+  }
+
+  /* //pagination */
+}
+
+@media (max-width: 410px) {
+  /* pagination */
+
+  .pagination > li > a {
+    width: 27px;
+    height: 26px;
+    line-height: 26px;
+  }
+
+  /* //pagination */
+}

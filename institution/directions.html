@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ssartpia</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/institution_directions.css" />
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- header -->
+      <header>
+        <ul class="header_topUtil">
+          <li class="topUtil_english">
+            <a href="javascript:;"
+              >English Ver.
+              <img src="../img/index/header/icon_browser.svg" alt=""
+            /></a>
+          </li>
+          <li class="topUtil_login"><a href="javascript:;">로그인</a></li>
+          <li class="topUtil_signIn"><a href="javascript:;">회원가입</a></li>
+          <li class="topUtil_ontpia">
+            <a href="javascript:;"><i>가상미술관</i> <span>ONTPIA</span></a>
+          </li>
+          <li class="topUtil_reserve">
+            <a href="javascript:;"><i>공연</i><span>예매하기</span></a>
+          </li>
+        </ul>
+        <div class="inner">
+          <h1>
+            <a href="../#"
+              ><img src="../img/index/header/logo.svg" alt="logo" /><span
+                class="hidden"
+                >logo</span
+              ></a
+            >
+          </h1>
+          <nav>
+            <ul class="gnb">
+              <li>
+                <a href="../performance/plan.html"
+                  >공연<span>PERFORMANCE</span></a
+                >
+                <ul class="sub_gnb">
+                  <li><a href="../performance/plan.html">기획공연</a></li>
+                  <li><a href="../performance/schedule.html">공연일정</a></li>
+                  <li><a href="javascript:;">티켓예매</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../exhibition/plan.html"
+                  >전시<span>EXHIBITION</span></a
+                >
+                <ul class="sub_gnb">
+                  <li><a href="../exhibition/plan.html">기획전시</a></li>
+                  <li><a href="../exhibition/schedule.html">전시일정</a></li>
+                  <li><a href="javascript:;">미술작품대여제</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../academy/class.html"
+                  >예술아카데미<span>ACADEMY</span></a
+                >
+                <ul class="sub_gnb">
+                  <li><a href="../academy/class.html">수강신청</a></li>
+                  <li><a href="../academy/ebook.html">E-Book</a></li>
+                  <li><a href="javascript:;">나의강좌</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../rental/performance.html"
+                  >대관안내<span>RENTAL INFO</span></a
+                >
+                <ul class="sub_gnb">
+                  <li><a href="../rental/performance.html">공연대관</a></li>
+                  <li><a href="../rental/exhibition.html">전시대관</a></li>
+                  <li><a href="javascript:;">온라인 대관신청</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../news/notification.html"
+                  >뉴스&middot;소식<span>NEWS</span></a
+                >
+                <ul class="sub_gnb">
+                  <li><a href="../news/notification.html">알림마당</a></li>
+                  <li><a href="../news/press.html">언론보도</a></li>
+                  <li><a href="javascript:;">갤러리</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../community/membership.html"
+                  >커뮤니티<span>COMMUNITY</span></a
+                >
+                <ul class="sub_gnb">
+                  <li><a href="../community/membership.html">회원제도</a></li>
+                  <li><a href="../community/cs.html">1:1고객센터</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../institution/introduction.html"
+                  >기관소개<span>INSTITUTION</span></a
+                >
+                <ul class="sub_gnb">
+                  <li>
+                    <a href="../institution/introduction.html">아트피아소개</a>
+                  </li>
+                  <li><a href="javascript:;">상주예술단체</a></li>
+                  <li><a href="javascript:;">시설소개</a></li>
+                  <li>
+                    <a href="../institution/directions.html">오시는 길</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header_util">
+            <li class="btn_search">
+              <a href="javascript:;"
+                ><img
+                  src="../img/index/header/icon_search.svg"
+                  alt="search"
+                /><span class="hidden">검색하기</span></a
+              >
+            </li>
+            <li class="btn_menu">
+              <a href="javascript:;">
+                <span></span>
+                <span></span>
+                <p class="hidden">메뉴 열고 닫기</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="search_area">
+          <li class="btn_menu">
+            <a href="javascript:;">
+              <span></span>
+              <span></span>
+              <p class="hidden">닫기</p>
+            </a>
+          </li>
+          <div class="search_inner">
+            <form>
+              <input
+                type="text"
+                class="search_bar"
+                placeholder="검색어를 입력해주세요."
+              />
+              <button type="submit" class="btn_search">
+                <img src="../img/index/header/icon_search.svg" alt="search" />
+              </button>
+            </form>
+            <div class="keyword">
+              <p>문화인을 위한 공간, 수성아트피아</p>
+              <ul>
+                <li><a href="../performance/plan.html">#공연일정보기</a></li>
+                <li><a href="javascript:;">#티켓예매</a></li>
+                <li><a href="../academy/class.html">#예술아카데미</a></li>
+                <li><a href="../academy/class.html">#수강신청</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="menu_area">
+          <div class="inner">
+            <div class="menu_bgLine">
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+            <div class="menu_gnb_area">
+              <ul class="menu_gnb">
+                <li>
+                  <a href="javascript:;">공연<span>PERFORMANCE</span></a>
+                  <ul class="menu_subGnb">
+                    <li><a href="../performance/plan.html">기획공연</a></li>
+                    <li><a href="../performance/schedule.html">공연일정</a></li>
+                    <li><a href="javascript:;">티켓예매</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;">전시<span>EXHIBITION</span></a>
+                  <ul class="menu_subGnb">
+                    <li><a href="../exhibition/plan.html">기획전시</a></li>
+                    <li><a href="../exhibition/schedule.html">전시일정</a></li>
+                    <li><a href="javascript:;">미술작품대여제</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;">예술아카데미<span>ACADEMY</span></a>
+                  <ul class="menu_subGnb">
+                    <li><a href="../academy/class.html">수강신청</a></li>
+                    <li><a href="../academy/ebook.html">E-Book</a></li>
+                    <li><a href="javascript:;">나의강좌</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;">대관안내<span>RENTAL INFO</span></a>
+                  <ul class="menu_subGnb">
+                    <li><a href="../rental/performance.html">공연대관</a></li>
+                    <li><a href="../rental/exhibition.html">전시대관</a></li>
+                    <li><a href="javascript:;">온라인 대관신청</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;">뉴스&middot;소식<span>NEWS</span></a>
+                  <ul class="menu_subGnb">
+                    <li><a href="../news/notification.html">알림마당</a></li>
+                    <li><a href="../news/press.html">언론보도</a></li>
+                    <li><a href="javascript:;">갤러리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;">커뮤니티<span>COMMUNITY</span></a>
+                  <ul class="menu_subGnb">
+                    <li><a href="../community/membership.html">회원제도</a></li>
+                    <li><a href="../community/cs.html">1:1고객센터</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;">기관소개<span>INSTITUTION</span></a>
+                  <ul class="menu_subGnb">
+                    <li>
+                      <a href="../institution/introduction.html"
+                        >아트피아소개</a
+                      >
+                    </li>
+                    <li><a href="javascript:;">상주예술단체</a></li>
+                    <li><a href="javascript:;">시설소개</a></li>
+                    <li>
+                      <a href="../institution/directions.html">오시는 길</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="menu_img">
+              <figure>
+                <img src="../img/index/header/img_full_01.jpg" alt="" />
+              </figure>
+              <figure>
+                <img src="../img/index/header/img_full_02.jpg" alt="" />
+              </figure>
+              <figure>
+                <img src="../img/index/header/img_full_03.jpg" alt="" />
+              </figure>
+            </div>
+            <ul class="menu_util">
+              <li><a href="javascript:;">로그인</a></li>
+              <li><a href="javascript:;">회원가입</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- aside -->
+      <aside class="aside_sns">
+        <ul>
+          <li>
+            <a href="#" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.5 24">
+                <path
+                  d="M8.1,24V13.1h3.7l.5-4.3h-4.2v-2.7c0-1.3,.3-2.1,2.1-2.1h2.3V.2c-.4-.1-1.8-.2-3.3-.2C5.9,0,3.7,2,3.7,5.6v3.1H0v4.3H3.7v11h4.4Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 16">
+                <path
+                  d="M18.5,0H3.5C1.6,0,0,1.6,0,3.5V12.5c0,1.9,1.6,3.5,3.5,3.5h15c1.9,0,3.5-1.6,3.5-3.5V3.5c0-1.9-1.6-3.5-3.5-3.5ZM8.7,11.3V4.7l6.1,3.2-6.1,3.4Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                  d="M4.7,20H15.3c2.6,0,4.7-2.1,4.7-4.7V4.7c0-2.6-2.1-4.7-4.7-4.7H4.7C2.1,0,0,2.1,0,4.7V15.3c0,2.6,2.1,4.7,4.7,4.7ZM16.6,1.9c.8,0,1.5,.7,1.5,1.5s-.7,1.5-1.5,1.5-1.5-.7-1.5-1.5,.7-1.5,1.5-1.5Zm-6.6,1.7c3.5,0,6.4,2.8,6.4,6.4s-2.9,6.4-6.4,6.4-6.4-2.8-6.4-6.4S6.5,3.6,10,3.6Z"
+                />
+                <path
+                  d="M10,14.1c2.3,0,4.1-1.8,4.1-4.1s-1.8-4.1-4.1-4.1-4.1,1.8-4.1,4.1,1.8,4.1,4.1,4.1Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg
+                id="Layer_2"
+                data-name="Layer 2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 21.9147 18.5251"
+              >
+                <path
+                  class="cls-1"
+                  d="M12.3004,7.1646c-.5043,0-.9135,.4093-.9135,.9135,0,.5037,.4093,.913,.9135,.913s.913-.4093,.913-.913c0-.5043-.4087-.9135-.913-.9135Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M17.3009,7.2326c-.4663,0-.845,.3787-.845,.8455,0,.4657,.3787,.8443,.845,.8443s.8449-.3787,.8449-.8443c0-.4669-.3787-.8455-.8449-.8455Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M18.101,0H3.8124C1.7065,0,0,1.7077,0,3.8136v7.4011c0,2.1053,1.7065,3.8129,3.8124,3.8129h5.3717l1.7726,3.4974,2.0085-3.4974h5.1358c2.106,0,3.8136-1.7077,3.8136-3.8129V3.8136c0-2.106-1.7077-3.8136-3.8136-3.8136ZM4.7327,10.1252c-.3891,0-.7518-.1072-1.0643-.2923v.2647h-1.4295V4.2964h1.4295v1.9172c.3125-.1838,.6752-.2917,1.0643-.2917,1.1617,0,2.1023,.9411,2.1023,2.1016,0,1.1611-.9405,2.1016-2.1023,2.1016Zm4.4557-3.8675v3.8675h-1.3725v-3.8675c0-.8401-.5325-.8401-.5325-.8401v-1.1213c1.2567-.0184,1.6844,.8149,1.8302,1.4013,.0705,.2843,.0748,.511,.0748,.5526v.0074Zm3.112,4.0403c-1.2267,0-2.2211-.9938-2.2211-2.2199s.9944-2.2205,2.2211-2.2205c1.2255,0,2.2199,.9938,2.2199,2.2205s-.9944,2.2199-2.2199,2.2199Zm4.7927,1.8253v-1.1195s1.2451,.1446,1.2451-.5606v-.5944c-.3046,.1789-.6587,.2831-1.0373,.2831-1.1336,0-2.0545-.9197-2.0545-2.0539,0-1.1348,.9209-2.0551,2.0545-2.0551,.3786,0,.7328,.1048,1.0373,.2837v-.1795h1.3284v4.316s.2898,1.6801-2.5735,1.6801Z"
+                />
+                <path
+                  class="cls-1"
+                  d="M4.5795,7.1689c-.4725,0-.856,.383-.856,.8547,0,.4724,.3835,.8547,.856,.8547,.4718,0,.8541-.3824,.8541-.8547,0-.4718-.3824-.8547-.8541-.8547Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- bg_line -->
+      <ul class="bg_line">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <!-- lnb_area -->
+      <div class="lnb_area">
+        <div class="inner">
+          <div class="cont_inner">
+            <ul class="lnb">
+              <li class="lnb_home">
+                <a href="../#"
+                  ><img src="../img/sub_public/icon_home.svg" alt="홈"
+                /></a>
+              </li>
+              <li class="lnb_depth1">기관소개</li>
+              <li class="lnb_depth2">
+                <a href="javascript:;">
+                  <span>오시는 길</span>
+                </a>
+                <ul class="sub_depth2">
+                  <li>
+                    <a href="../institution/introduction.html">아트피아소개</a>
+                  </li>
+                  <li class="off"><a href="javascript:;">상주예술단체</a></li>
+                  <li class="off"><a href="javascript:;">시설소개</a></li>
+                  <li>
+                    <a href="../institution/directions.html">오시는 길</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- main -->
+      <main id="contents_area_performance">
+        <!--     <main id="contents_area_exhibition"> -->
+        <div class="inner">
+          <div class="cont_inner">
+            <div class="title_text">
+              <p class="en_title">INSTITUTION</p>
+              <p class="ko_title">오시는 길</p>
+            </div>
+          </div>
+
+          <!-- cont_result_area -->
+          <div class="cont_result_area">
+            <!-- sub_tab_resultA -->
+            <div class="sub_tab_resultA">
+              <div class="cont_inner">
+                <!-- sub_tab_result -->
+                <ul class="sub_tab_result sub_tab_result01">
+                  <li>
+                    <div
+                      id="daumRoughmapContainer1676249310791"
+                      class="root_daum_roughmap root_daum_roughmap_landing"
+                    ></div>
+                  </li>
+                  <li>
+                    <div class="title_area">
+                      <p>오시는 길</p>
+                    </div>
+                    <ul class="text_area">
+                      <li>
+                        <p class="text_area_title">대중 교통</p>
+                        <ul class="text_area_text">
+                          <li><span>버스</span> 204, 403, 449, 814</li>
+                          <li>
+                            <span>지하철</span> 지하철 3호선 수성못역 하차, 도보
+                            11분, 택시 기본요금
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <p class="text_area_title">철도 이용</p>
+                        <table>
+                          <thead>
+                            <th>하차지점</th>
+                            <th>오시는 길</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>동대구역 하차</th>
+                              <td class="info_cont">
+                                <p class="title">대중교통 이용 시</p>
+                                <ul>
+                                  <li>
+                                    814(동대구역 건너 승차) → 수성아트피아앞
+                                    하차 1호선 동대구역 승차 → 명덕역에서 3호선
+                                    환승 → 3호선 수성못역 하차 → 도보 11분
+                                  </li>
+                                </ul>
+                                <p class="title">택시 이용 시</p>
+                                <ul>
+                                  <li>
+                                    동대구역 앞 택시정거장 이용, 17분 소요
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <th>대구역 하차</th>
+                              <td class="info_cont">
+                                <p class="title">대중교통 이용 시</p>
+                                <ul>
+                                  <li>
+                                    204(경상감영공원앞 승차) → 수성아트피아앞
+                                    하차 1호선 대구역 승차 → 명덕역 3호선 환승 →
+                                    3호선 수성못역 하차 → 도보 11분
+                                  </li>
+                                </ul>
+                                <p class="title">택시 이용 시</p>
+                                <ul>
+                                  <li>
+                                    롯데백화점 정문에서 택시정거장 이용, 20분
+                                    소요
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <th>서대구역 하차</th>
+                              <td class="info_cont">
+                                <p class="title">대중교통 이용 시</p>
+                                <ul>
+                                  <li>
+                                    204(서대구역 남측1)승차 → 수성아트피아앞
+                                    하차
+                                  </li>
+                                </ul>
+                                <p class="title">택시 이용 시</p>
+                                <ul>
+                                  <li>
+                                    서대구역 앞 택시정거장 이용, 27분 소요
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </li>
+
+                      <li>
+                        <p class="text_area_title">고속도로 이용</p>
+                        <table>
+                          <thead>
+                            <th>IC</th>
+                            <th>오시는길</th>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th>수성 IC</th>
+                              <td class="info_cont">
+                                <p class="title">수성 IC</p>
+                                <ul>
+                                  <li>
+                                    수성IC에서 ‘대구국제공항, 경산’ 방면으로
+                                    우회전 → 월드컵삼거리에서 ‘대구국제공항’
+                                    방면으로 좌회전 → ‘황금네거리’ 방면으로
+                                    오른쪽 방향 → 황금고가교에서 ‘중동교,
+                                    황금네거리’ 방면으로 왼쪽 고가차도 진입 →
+                                    황금네거리에서 ‘수성못, TBC’ 방면으로 좌회전
+                                    → 두산오거리에서 ‘대구지방경찰청,
+                                    수성아트피아’ 방면으로 좌회전 → 수성아트피아
+                                    주차장으로 진입
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <th>동대구 IC</th>
+                              <td class="info_cont">
+                                <p class="title">동대구 IC</p>
+                                <ul>
+                                  <li>
+                                    동대구IC에서 ‘시청’방면으로 왼쪽 고가차도
+                                    진입 → 망우당고가차도에서 ‘시청,
+                                    동대구역복합환승센터’ 방면으로 왼쪽 고가차도
+                                    진입 → 효목네거리에서 ‘국립대구박물관,
+                                    만촌네거리, 무열대’ 방면으로 좌회전 →
+                                    무학네거리에서 ‘수성아트피아, 대구경찰청’
+                                    방면으로 우회전 → ‘지범로 17길’ 방면으로
+                                    좌회전 → 수성아트피아 주차장으로 진입
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <th>서대구역 IC</th>
+                              <td class="info_cont">
+                                <p class="title">서대구역 IC</p>
+                                <ul>
+                                  <li>
+                                    남대구톨게이트에서 ‘본리네거리’ 방면으로
+                                    오른쪽 방향 → 대명역에서 ‘대명로14길’
+                                    방면으로 우회전 → 700m 직진 후 좌회전 →
+                                    대명교에서 ‘신천대로’ 방면으로 좌회전 →
+                                    안지랑고가교에서 ‘가창, 신천대로,
+                                    남구국제스포츠클라이밍장’ 방면으로 왼쪽
+                                    고가차도 진입 → 현충고가교에서 ‘가창,
+                                    신천대로’ 방면으로 고가차도 진입 →
+                                    앞산고가교에서 ‘대구경찰청, 수성못,
+                                    남구국제스포츠클라이밍장’ 방면으로 왼쪽
+                                    고가차도 진입 → ‘앞산터널로(유료도로)’
+                                    방면으로 우회전 → ‘대구경찰청, 두산오거리’
+                                    방면으로 왼쪽 방향 → 수성아트피아 주차장으로
+                                    진입
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <th>북대구 IC</th>
+                              <td class="info_cont">
+                                <p class="title">북대구 IC</p>
+                                <ul>
+                                  <li>
+                                    북대구 IC 북대구IC에서 ‘시청, 신천대로’
+                                    방면으로 오른쪽 방향 → ‘대구국제공항,
+                                    대구스타디움, 시청’ 방면으로 도시고속도로
+                                    진입 → 성북교지하차도에서 ‘청도, 가창,
+                                    앞산순환로’ 방면으로 왼쪽 지하차도 진입 →
+                                    ‘한국장학재단(KOCAF), 시청별관(구‧경북도청)’
+                                    방면으로 좌회전 → 시청별관에서 우회전 →
+                                    신천동로진입부에서 ‘가창, 수성교’ 방면으로
+                                    오른쪽 방향 → 수성아트피아 주차장 진입
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <th>서대구 IC</th>
+                              <td class="info_cont">
+                                <p class="title">서대구 IC</p>
+                                <ul>
+                                  <li>
+                                    서대구 IC 서대구IC에서 ‘신천대로,
+                                    서대구공단’ 방면으로 오른쪽 방향 → ‘팔달교’
+                                    방면으로 좌회전 → 고가차도 진입 →
+                                    도시고속도로 진입 → 매천대교지하차도에서
+                                    ‘앞산순환로, 대구국제공항, 안동’ 방면으로
+                                    왼쪽 지하차도 진입 → 팔달교지하차도에서
+                                    ‘앞산순환로, 침산교’ 방면으로 왼쪽 지하차도
+                                    진입 → 침산교지하차도에서 ‘앞산순환로, 시청’
+                                    방면으로 왼쪽 지하차도 진입 →
+                                    성북교지하차도에서 ‘청도, 가창, 앞산순환로’
+                                    방면으로 왼쪽 지하차도 진입 →
+                                    ‘한국장학재단(KOSAF), 시청별관(구․경북도청)’
+                                    방면으로 좌회전 → 시청별관에서 우회전 →
+                                    신천동로진입부에서 ‘가창, 수성교’ 방면으로
+                                    오른쪽 방향 → ‘경산, 범물’ 방면으로 좌회전 →
+                                    수성아트피아 주차장 진입
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <div class="top_info">
+          <div class="inner">
+            <ul>
+              <li class="footer_cont01">
+                <ul class="inner_contA">
+                  <li>
+                    <a href="../#">
+                      <img src="../img/index/header/logo.svg" alt="logo" />
+                      <span class="hidden">logo</span>
+                    </a>
+                  </li>
+                  <li>대구 수성구 무학로 180</li>
+                  <li>
+                    COPYRIGHT&lpar;C&rpar; SUSEONG ARTPIA <br />ALL RIGHTS
+                    RESERVED. BY KOWEB.
+                  </li>
+                </ul>
+              </li>
+              <li class="footer_cont02">
+                <ul class="inner_cont">
+                  <li>
+                    <a href="javascript:;"> 개인정보처리방침 </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"> 이용약관 </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"> 이메일무단수집거부 </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"> 찾아오시는 길 </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer_cont03">
+                <ul class="inner_cont">
+                  <li>
+                    <a href="../performance/plan.html"> 공연안내 </a>
+                  </li>
+                  <li>
+                    <a href="../exhibition/plan.html"> 전시안내 </a>
+                  </li>
+                  <li>
+                    <a href="../academy/class.html"> 예술 아카데미 </a>
+                  </li>
+                  <li>
+                    <a href="../rental/performance.html?tab=procedure">
+                      대관안내
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer_cont04">
+                <ul class="inner_cont">
+                  <li>
+                    <a href="javascript:;"> 로그인 </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"> 회원가입 </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"> 예매하기 </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;"> 예매확인 </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer_cont05">
+                <div class="site_select">
+                  <div class="family_site">
+                    <span>FAMILY SITE</span>
+                  </div>
+                  <ul>
+                    <li><a href="javascript:;">수성구청</a></li>
+                    <li><a href="javascript:;">수성문화재단</a></li>
+                    <li><a href="javascript:;">범어도서관</a></li>
+                    <li><a href="javascript:;">용학도서관</a></li>
+                    <li><a href="javascript:;">고산도서관</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bot_info">
+          <div class="inner">
+            <ul>
+              <li>사업자번호. 502-82-20323</li>
+              <li>전화번호. 053-668-1800</li>
+              <li>팩스. 053-666-3259</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="../js/common.js"></script>
+    <script
+      charset="UTF-8"
+      class="daum_roughmap_loader_script"
+      src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+    ></script>
+    <script src="../js/institution_directions.js"></script>
+  </body>
+</html>
