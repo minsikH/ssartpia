@@ -998,8 +998,8 @@ fetch("../data.json")
 
       let totalPerformanceItems = performanceItems.length;
       let totalExhibitionItems = exhibitionItems.length;
-      console.log("totalPerformanceItems : ", totalPerformanceItems);
-      console.log("totalExhibitionItems : ", totalExhibitionItems);
+      //console.log("totalPerformanceItems : ", totalPerformanceItems);
+      //console.log("totalExhibitionItems : ", totalExhibitionItems);
       let totalItems = contentsAreaSelector.includes("performance")
         ? totalPerformanceItems
         : totalExhibitionItems;
@@ -1285,7 +1285,7 @@ fetch("../data.json")
         resultItems = resultItems.filter((item) => regex.test(item.title));
       }
 
-      console.log(resultItems);
+      //console.log(resultItems);
 
       return resultItems;
     }
@@ -1310,7 +1310,7 @@ fetch("../data.json")
         }
         groupedItems[monthItem].push(item);
       });
-      console.log("groupedItems5", groupedItems);
+      //console.log("groupedItems5", groupedItems);
 
       // 현재 표시된 데이터의 월을 저장
       const currentDisplayedMonths = document.querySelectorAll(".date_area");

@@ -71,7 +71,6 @@ section .cont_top {
 /* main_swiper */
 .main_swiper {
   width: 100%;
-  background: pink;
   margin-bottom: 50rem;
 }
 

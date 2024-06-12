@@ -154,8 +154,8 @@ fetch("../data.json")
         );
       }
 
-      console.log("Search Text:", searchText);
-      console.log("Select Box Result:", selectBoxResult);
+      //console.log("Search Text:", searchText);
+      //console.log("Select Box Result:", selectBoxResult);
 
       const typeFilter = currentType === "all" || item.type === currentType;
 
@@ -466,8 +466,8 @@ fetch("../data.json")
         );
       }
 
-      console.log("Search Text:", searchText);
-      console.log("Select Box Result:", selectBoxResult);
+      //console.log("Search Text:", searchText);
+      //console.log("Select Box Result:", selectBoxResult);
 
       const typeFilter = currentTypeB === "all" || item.type === currentTypeB;
 
