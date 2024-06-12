@@ -361,6 +361,10 @@ fetch("data.json")
 */
 
     let mainSwiper = new Swiper(".main_swiper", {
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
       loop: true,
       pagination: {
         el: ".swiper-pagination",
